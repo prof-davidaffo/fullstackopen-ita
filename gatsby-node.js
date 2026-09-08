@@ -54,7 +54,7 @@ exports.onCreatePage = ({ page, actions }) => {
     actions.deletePage(page);
     actions.createPage({
       ...page,
-      context: { ...page.context, langKey: 'fi' },
+      context: { ...page.context, langKey: 'en' },
     });
   }
 };

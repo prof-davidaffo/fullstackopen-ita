@@ -115,8 +115,15 @@ module.exports = {
     },
     1: {
       a: 'Introduzione a React',
+      b: 'JavaScript',
+      c: 'Stato dei componenti e gestione degli eventi',
+      d: 'Stato complesso e debugging delle applicazioni React',
     },
-    2: {},
+  2: {
+    a: 'Rendering delle collezioni e moduli',
+    b: 'Form',
+    c: 'Recuperare dati dal server',
+  },
     3: {},
     4: {},
     5: {},
