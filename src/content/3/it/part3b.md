@@ -214,11 +214,7 @@ Le istanze gratuite hanno un filesystem temporaneo e si sospendono dopo un perio
 
 Finora abbiamo eseguito React in <i>modalità di sviluppo</i>, che offre messaggi chiari e aggiornamento immediato delle modifiche.
 
-Per pubblicare l'applicazione serve una [build di produzione](https://vitejs.dev/guide/build.html), ottimizzata per l'esecuzione pubblica. Nel progetto frontend della [parte 2](/it/part2) eseguiamo:
-
-```bash
-npm run build
-```
+Per pubblicare l'applicazione serve una [build di produzione](https://vitejs.dev/guide/build.html), ottimizzata per l'esecuzione pubblica. Nel progetto frontend della [parte 2](/it/part2) eseguiamo _npm run build_.
 
 Vite crea la directory <i>dist</i>, contenente <i>index.html</i>, gli asset e una versione [minificata](<https://en.wikipedia.org/wiki/Minification_(programming)>) del codice e delle dipendenze. Anche se il sorgente è suddiviso in più file, il risultato viene raggruppato e ottimizzato.
 
@@ -378,7 +374,7 @@ Il primo script costruisce e copia il frontend; il secondo aggiorna il repositor
 > **Nota:** in Windows gli script npm usano normalmente `cmd.exe`, che non comprende i comandi Bash. È possibile configurare Git Bash:
 
 ```md
-npm config set script-shell "C:\Program Files\git\bin\bash.exe"
+npm config set script-shell "C:\\Program Files\\git\\bin\\bash.exe"
 ```
 
 Un'altra possibilità è [shx](https://www.npmjs.com/package/shx).
