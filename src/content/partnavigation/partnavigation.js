@@ -140,6 +140,10 @@ module.exports = {
     },
     5: {
       a: 'Login nel frontend',
+      b: 'props.children e riferimenti ai componenti',
+      c: 'Testare le applicazioni React',
+      d: 'Test end-to-end con Playwright',
+      e: 'React Router e librerie per l’interfaccia',
     },
     6: {},
     7: {},
