@@ -1,7 +1,7 @@
 import './Arrow.scss';
 
 import Element from '../Element/Element';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import PropTypes from 'prop-types';
 import React from 'react';
 import colors from '../../colors';

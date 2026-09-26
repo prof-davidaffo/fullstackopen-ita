@@ -1,7 +1,7 @@
 import './ContentLiftup.scss';
 
 import { Image, resolveImageSource } from '../Image/Image';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import { TripleBorder } from '../TripleBorder/TripleBorder';

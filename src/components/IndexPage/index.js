@@ -14,16 +14,18 @@ import landingImage from '../../images/landing.svg';
 import licenceIcon from '../../images/cc-logo.png';
 import mainSEOdescription from '../../content/seo/mainSEOdescription';
 import mainSEOtags from '../../content/seo/mainSEOtags';
-import {
-  COURSE_NAME,
-  getSectionCopy,
-} from '../../courseConfig';
+import { useCourse } from '../CourseTrack';
+import { COURSE_NAME, getSectionCopy } from '../../courseConfig';
 
 const IndexPage = ({ lang, title = COURSE_NAME }) => {
   const { t } = useTranslation();
 
   const { mainTitle, licence, licenced } = content[lang] || content.en;
-  const intro = getSectionCopy(lang).core.description;
+  const course = useCourse();
+  const intro = getSectionCopy(lang).core.description.replace(
+    'MongoDB',
+    course === 'sqlite' ? 'SQLite' : 'MongoDB'
+  );
 
   const seoDescription = mainSEOdescription[lang];
 

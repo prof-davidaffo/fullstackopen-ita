@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import snakeCase from 'lodash/fp/snakeCase';
 import { useTranslation } from 'react-i18next';
 
@@ -7,10 +7,13 @@ import navigation from '../../content/partnavigation/partnavigation';
 import Element from '../Element/Element';
 import { SubHeader } from '../SubHeader/SubHeader';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
+import { useCourse } from '../CourseTrack';
+import { getCourseNavigation, getCourseTitle } from '../../courseTracks';
 
 const SearchResults = ({ query, results = [] }) => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+  const course = useCourse();
 
   if (results.length === 0) {
     return (
@@ -29,17 +32,17 @@ const SearchResults = ({ query, results = [] }) => {
         />
 
         <ol>
-          {results.map(({ part, letter }) => (
+          {results.map(({ part, letter, lang: resultLang }) => (
             <li key={`${part}${letter}`}>
               <Link
                 to={getPartTranslationPath(
-                  lang,
+                  resultLang || lang,
                   part,
-                  `/${snakeCase(navigation[lang][part][letter])}`
+                  `/${snakeCase(getCourseNavigation(resultLang || lang, part, course)[letter])}`
                 )}
               >
                 <div>
-                  {`part ${part}, ${letter}: ${navigation[lang][part][letter]}`}
+                  {`part ${part}, ${letter}: ${getCourseTitle(resultLang || lang, part, letter, course)}`}
                 </div>
               </Link>
             </li>

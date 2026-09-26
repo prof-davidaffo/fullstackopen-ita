@@ -1,6 +1,7 @@
 import './BodyText.scss';
 
-import Parser from 'html-react-parser';
+import Parser, { domToReact } from 'html-react-parser';
+import { CourseAnchor } from '../CourseTrack';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -16,6 +17,16 @@ export const BodyText = ({
   ...props
 }) => {
   const classes = [];
+  const parserOptions = {
+    replace: ({ type, name, attribs, children }) => {
+      if (type === 'tag' && name === 'a' && attribs.href)
+        return (
+          <CourseAnchor {...attribs}>
+            {domToReact(children, parserOptions)}
+          </CourseAnchor>
+        );
+    },
+  };
 
   centered && classes.push('centered');
   bold && classes.push('bold');
@@ -47,7 +58,7 @@ export const BodyText = ({
         text &&
         text.map((p) => (
           <div key={p} className={`body-text__content ${classes.join(' ')}`}>
-            {Parser(p)}
+            {Parser(p, parserOptions)}
           </div>
         ))
       )}

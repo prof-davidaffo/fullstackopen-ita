@@ -13,7 +13,8 @@ import Seo from '../components/seo';
 import ScrollNavigation from '../components/ScrollNavigation/ScrollNavigation';
 import { SubHeader } from '../components/SubHeader/SubHeader';
 import colors from '../colors';
-import { graphql } from 'gatsby';
+import { graphql, withPrefix } from 'gatsby';
+import { coursePath, getCourseTitle } from '../courseTracks';
 import mainSEOdescription from '../content/seo/mainSEOdescription';
 import mainSEOtags from '../content/seo/mainSEOtags';
 import navigation from '../content/partnavigation/partnavigation';
@@ -46,7 +47,8 @@ export default class ContentTemplate extends Component {
 
     links.map((i) => {
       i.style = `border-color: ${colors[partColors[frontmatter.part]]}`;
-      const isExternal = new URL(i.href, window.location.origin).origin !==
+      const isExternal =
+        new URL(i.href, window.location.origin).origin !==
         window.location.origin;
 
       if (isExternal) {
@@ -95,12 +97,26 @@ export default class ContentTemplate extends Component {
   render() {
     const { markdownRemark } = this.props.data;
     const { frontmatter, html } = markdownRemark;
-    const { mainImage, letter, part, lang } = frontmatter;
+    const { mainImage } = frontmatter;
+    const { letter, part, lang, course } = this.props.pageContext;
+    const title = getCourseTitle(lang, part, letter, course);
     const colorCode = colors[partColors[part]];
 
     const parserOptions = {
       replace: (props) => {
         const { type, name, attribs, children } = props;
+        if (type === 'tag' && name === 'a' && attribs.href?.startsWith('/')) {
+          const prefix = withPrefix('/').replace(/\/$/, '');
+          const href =
+            prefix && attribs.href.startsWith(prefix + '/')
+              ? attribs.href.slice(prefix.length)
+              : attribs.href;
+          return (
+            <a {...attribs} href={withPrefix(coursePath(href, course))}>
+              {domToReact(children, parserOptions)}
+            </a>
+          );
+        }
         if (type === 'tag' && name === 'picture') {
           const alt = children[0].attribs.alt
             ? children[0].attribs.alt
@@ -159,9 +175,7 @@ export default class ContentTemplate extends Component {
       <Layout isCoursePage={true}>
         <Seo
           lang={lang}
-          title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part} | ${
-            this.state.h1Title
-          }`}
+          title={`${COURSE_NAME} · ${lang === 'fi' ? 'osa' : 'part'} ${part} | ${title}`}
           description={mainSEOdescription[lang]}
           keywords={[
             ...mainSEOtags,
@@ -212,7 +226,7 @@ export default class ContentTemplate extends Component {
                   },
                   {
                     backgroundColor: colors['black'],
-                    text: navigation[lang][part][letter],
+                    text: title,
                   },
                 ]}
               />
@@ -224,11 +238,12 @@ export default class ContentTemplate extends Component {
               part={part}
               letter={letter}
               lang={lang}
-              currentPartTitle={navigation[lang][part][letter]}
+              course={course}
+              currentPartTitle={title}
               currentPath={getPartTranslationPath(
                 lang,
                 part,
-                `/${snakeCase(navigation[lang][part][letter])}`
+                `/${snakeCase(navigation[lang]?.[part]?.[letter] || title)}`
               )}
               colorCode={colorCode}
             />
@@ -243,13 +258,16 @@ export default class ContentTemplate extends Component {
                     {letter}
                   </p>
 
-                  <SubHeader
-                    headingLevel="h1"
-                    text={navigation[lang][part][letter]}
-                  />
+                  <SubHeader headingLevel="h1" text={title} />
                 </Element>
               </Element>
 
+              {frontmatter.lang !== lang && (
+                <p className="course-content">
+                  SQLite material is currently available in Italian and English.
+                  This chapter is shown in English.
+                </p>
+              )}
               {Parser(html, parserOptions)}
             </Element>
           </Element>
@@ -262,14 +280,8 @@ export default class ContentTemplate extends Component {
 }
 
 export const contentPageQuery = graphql`
-  query ($part: Int!, $letter: String!, $lang: String!) {
-    markdownRemark(
-      frontmatter: {
-        part: { eq: $part }
-        letter: { eq: $letter }
-        lang: { eq: $lang }
-      }
-    ) {
+  query ($contentId: String!) {
+    markdownRemark(id: { eq: $contentId }) {
       html
       frontmatter {
         mainImage {

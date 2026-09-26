@@ -4,13 +4,14 @@ import React, { Component } from 'react';
 
 import Accordion from '../Accordion/Accordion';
 import Element from '../Element/Element';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import PropTypes from 'prop-types';
 import kebabCase from 'lodash/fp/kebabCase';
 import navigation from '../../content/partnavigation/partnavigation';
 import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
 import { isContentVisible } from '../../courseConfig';
+import { getCourseNavigation, getCourseTitle } from '../../courseTracks';
 
 class ScrollNavigation extends Component {
   constructor(props) {
@@ -60,7 +61,7 @@ class ScrollNavigation extends Component {
         }
         last = heading;
       }
-      if (this.state.selectedItem !== last.id) {
+      if (last && this.state.selectedItem !== last.id) {
         this.setState({
           selectedItem: last.id,
         });
@@ -77,18 +78,19 @@ class ScrollNavigation extends Component {
     for (let key in partsNode) {
       if (!isContentVisible(part, key)) continue;
 
-      if (currentPartTitle !== partsNode[key]) {
+      const title = getCourseTitle(lang, part, key, this.props.course);
+      if (currentPartTitle !== title) {
         arr.push(
           <Link
             key={key}
             className="left-navigation-link"
             style={{ borderColor: colorCode }}
             to={getPartTranslationPath(
-              lang,
+              key === 'f' && lang !== 'it' ? 'en' : lang,
               part,
               `/${snakeCase(partsNode[key])}`
             )}
-          >{`${key} ${partsNode[key]}`}</Link>
+          >{`${key} ${title}`}</Link>
         );
       } else {
         arr.push(
@@ -101,7 +103,7 @@ class ScrollNavigation extends Component {
             }}
             initiallyOpened
             key={key}
-            title={`${letter} ${partsNode[key]}`}
+            title={`${letter} ${title}`}
             selectedItem={this.state.selectedItem}
             list={headings.map((i) => {
               return {
@@ -128,7 +130,9 @@ class ScrollNavigation extends Component {
             dirColumn
             className={`scroll-navigation ${this.props.className}`}
           >
-            {this.loopThroughPartsNode(navigation[this.props.lang][part])}
+            {this.loopThroughPartsNode(
+              getCourseNavigation(this.props.lang, part, this.props.course)
+            )}
           </Element>
         </Element>
       </Element>

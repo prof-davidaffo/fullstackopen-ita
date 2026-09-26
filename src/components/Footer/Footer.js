@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -21,10 +21,7 @@ const Footer = () => {
     >
       <p className="col-3 col-10--mobile">{COURSE_NAME}</p>
 
-      <Element
-        flex
-        className="col-7 col-10--mobile footer__navigation"
-      >
+      <Element flex className="col-7 col-10--mobile footer__navigation">
         <div className="footer__navigation-link-container">
           {navigation.map((item) => (
             <Link

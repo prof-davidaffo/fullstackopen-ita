@@ -5,11 +5,8 @@ import { Banner } from '../Banner/Banner';
 import { ContentLiftup } from '../ContentLiftup/ContentLiftup';
 import React from 'react';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
-import {
-  curriculum,
-  getPartNames,
-  getSectionCopy,
-} from '../../courseConfig';
+import { Link, useCourse } from '../CourseTrack';
+import { curriculum, getPartNames, getSectionCopy } from '../../courseConfig';
 
 const partName = {
   en: 'Part',
@@ -22,6 +19,7 @@ const partName = {
 };
 
 export const PartBanner = ({ lang }) => {
+  const course = useCourse();
   const partNames = getPartNames(lang);
   const sections = getSectionCopy(lang);
 
@@ -42,7 +40,12 @@ export const PartBanner = ({ lang }) => {
                 {id === 'core' ? '01' : id === 'advanced' ? '02' : '03'}
               </p>
               <h2>{sections[id].title}</h2>
-              <p>{sections[id].description}</p>
+              <p>
+                {sections[id].description.replace(
+                  'MongoDB',
+                  course === 'sqlite' ? 'SQLite' : 'MongoDB'
+                )}
+              </p>
             </header>
 
             <div className="course-section__parts flex-fix-aligning">
@@ -70,6 +73,21 @@ export const PartBanner = ({ lang }) => {
                 );
               })}
             </div>
+            {id === 'core' && course === 'sqlite' && (
+              <p>
+                <Link
+                  to={
+                    lang === 'it'
+                      ? '/it/part5/pubblicare_lapplicazione'
+                      : '/en/part5/deploying_the_application'
+                  }
+                >
+                  {lang === 'it'
+                    ? 'Conclusione del corso base: pubblicare l’applicazione (dopo la Parte 5)'
+                    : 'Core course conclusion: deploy your application (after Part 5)'}
+                </Link>
+              </p>
+            )}
           </section>
         ))}
       </div>

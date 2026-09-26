@@ -3,7 +3,7 @@ import './Accordion.scss';
 import React, { Component } from 'react';
 
 import { BodyText } from '../BodyText/BodyText';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import PropTypes from 'prop-types';
 import snakeCase from 'lodash/fp/snakeCase';
 

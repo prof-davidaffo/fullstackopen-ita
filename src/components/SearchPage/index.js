@@ -10,6 +10,7 @@ import Element from '../Element/Element';
 import InputField from './InputField';
 import { SubHeader } from '../SubHeader/SubHeader';
 import SrOnly from '../SrOnly';
+import { useCourse } from '../CourseTrack';
 
 const SearchPage = ({
   localSearch,
@@ -21,13 +22,16 @@ const SearchPage = ({
   const [query, setQuery] = useState('');
   const [debouncedQuery] = useDebounce(query, 500);
   const { t } = useTranslation();
+  const course = useCourse();
 
   const handleInpuptChange = (event) => {
     setQuery(event.target.value);
   };
 
   const results = useFlexSearch(debouncedQuery, index, store);
-  const filteredResults = results.filter((res) => res.letter !== null);
+  const filteredResults = results.filter(
+    (res) => res.letter && res.course === course
+  );
   const showResults = Boolean(query);
 
   return (

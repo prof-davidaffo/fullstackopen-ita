@@ -619,3 +619,18 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.course-picker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 5%;
+  border-bottom: 1px solid currentColor;
+}
+.course-picker select {
+  max-width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  color: inherit;
+  background: var(--color-background);
+}

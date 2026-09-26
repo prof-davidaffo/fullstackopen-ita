@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from '../../CourseTrack';
 import { useTranslation } from 'react-i18next';
 
 import SearchIcon from '../../SearchIcon';

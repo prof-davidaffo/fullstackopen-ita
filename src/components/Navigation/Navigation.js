@@ -10,6 +10,8 @@ import { NavigationItem } from './Item';
 import SearchLink from './SearchLink';
 import ThemeSwitcher from './ThemeSwitcher';
 import { getSectionCopy } from '../../courseConfig';
+import { useCourse } from '../CourseTrack';
+import { coursePath } from '../../courseTracks';
 
 const getTranslationPath = (path, language) => {
   return language === 'fi' ? path : `/${language}${path}`;
@@ -51,6 +53,7 @@ const handleHamburgerClick = () => {
 
 const Navigation = (props) => {
   const { t, i18n } = useTranslation();
+  const course = useCourse();
   const [navigationOpen, setNavigationOpen] = useState(false);
 
   const { className = '' } = props;
@@ -59,7 +62,7 @@ const Navigation = (props) => {
   const showSearchLink = searchIsEnabledForLang(lang);
 
   const onLanguageChange = (newLang) => {
-    navigate(getTranslationPath('/', newLang));
+    navigate(coursePath(getTranslationPath('/', newLang), course));
   };
 
   return (

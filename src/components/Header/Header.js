@@ -1,7 +1,7 @@
 import './Header.scss';
 
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import Navigation from '../Navigation/Navigation';
 import { TripleBorder } from '../TripleBorder/TripleBorder';
 import getTranslationPath from '../../utils/getTranslationPath';

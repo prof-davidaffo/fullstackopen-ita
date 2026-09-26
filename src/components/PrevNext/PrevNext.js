@@ -2,7 +2,7 @@ import './PrevNext.scss';
 
 import translationProgress from '../../utils/translationProgress';
 import Element from '../Element/Element';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import navigation from '../../content/partnavigation/partnavigation';
@@ -10,11 +10,13 @@ import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../../utils/getPartTranslationPath';
 import { useTranslation } from 'react-i18next';
 import { isContentVisible } from '../../courseConfig';
+import { useCourse } from '../CourseTrack';
+import { getCourseNavigation } from '../../courseTracks';
 
 const hasPart = (part, lang) =>
   Object.keys(navigation[lang]).includes(part.toString());
-const visibleLetters = (part, lang) =>
-  Object.keys(navigation[lang][part] || {}).filter((letter) =>
+const visibleLetters = (part, lang, course) =>
+  Object.keys(getCourseNavigation(lang, part, course)).filter((letter) =>
     isContentVisible(part, letter)
   );
 
@@ -24,15 +26,16 @@ const langUrl = (lang) => (lang === 'fi' ? '/osa' : `/${lang}/part`);
 
 const PrevNext = ({ part, letter, lang }) => {
   const { t } = useTranslation();
-  const letters = visibleLetters(part, lang);
+  const course = useCourse();
+  const letters = visibleLetters(part, lang, course);
   const letterIndex = letter ? letters.indexOf(letter) : -1;
   const hasNextDestination = letter
     ? letterIndex < letters.length - 1 || hasPart(part + 1, lang)
     : hasPart(part + 1, lang);
 
   const contentPath = (targetLetter) =>
-    `${langUrl(lang)}${part}/${snakeCase(
-      navigation[lang][part][targetLetter]
+    `${langUrl(targetLetter === 'f' && lang !== 'it' ? 'en' : lang)}${part}/${snakeCase(
+      getCourseNavigation(lang, part, course)[targetLetter]
     )}`;
 
   const getPrev = () => {
@@ -52,9 +55,7 @@ const PrevNext = ({ part, letter, lang }) => {
             </Element>
           </Link>
 
-          {hasNextDestination && (
-            <div className="col-1--mobile separator" />
-          )}
+          {hasNextDestination && <div className="col-1--mobile separator" />}
         </>
       );
     } else if (letter) {
@@ -75,9 +76,7 @@ const PrevNext = ({ part, letter, lang }) => {
               </Element>
             </Link>
 
-            {hasNextDestination && (
-              <div className="col-1--mobile separator" />
-            )}
+            {hasNextDestination && <div className="col-1--mobile separator" />}
           </>
         );
       } else if (hasPart(part - 1, lang)) {
@@ -96,9 +95,7 @@ const PrevNext = ({ part, letter, lang }) => {
               </Element>
             </Link>
 
-            {hasNextDestination && (
-              <div className="col-1--mobile separator" />
-            )}
+            {hasNextDestination && <div className="col-1--mobile separator" />}
           </>
         );
       } else {

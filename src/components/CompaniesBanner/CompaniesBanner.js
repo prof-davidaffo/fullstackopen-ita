@@ -5,7 +5,7 @@ import { BodyText } from '../BodyText/BodyText';
 import { ContentLiftup } from '../ContentLiftup/ContentLiftup';
 import Element from '../Element/Element';
 import { Image } from '../Image/Image';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import { PropTypes } from 'prop-types';
 import React from 'react';
 import snakeCase from 'lodash/fp/snakeCase';

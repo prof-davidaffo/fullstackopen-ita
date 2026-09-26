@@ -5,7 +5,10 @@ const getLanguageFromPath = (path) => {
     return 'fi';
   }
 
-  const parts = path.split('/').filter(Boolean);
+  const parts = path
+    .replace(/^\/mongodb(?=\/|$)/, '')
+    .split('/')
+    .filter(Boolean);
   const language = parts[0];
 
   return TRANSLATION_LANGUAGES.includes(language) ? language : 'fi';

@@ -18,20 +18,30 @@ import { partColors } from './partColors';
 import snakeCase from 'lodash/fp/snakeCase';
 import getPartTranslationPath from '../utils/getPartTranslationPath';
 import { COURSE_NAME, isContentVisible } from '../courseConfig';
+import { getCourseNavigation, getCourseTitle } from '../courseTracks';
+import { CourseAnchor } from '../components/CourseTrack';
 
-export default function PartIntroTemplate({ data }) {
+export default function PartIntroTemplate({ data, pageContext }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  const { mainImage, part, lang } = frontmatter;
+  const { mainImage } = frontmatter;
+  const { part, lang, course } = pageContext;
+  const partNavigation = getCourseNavigation(lang, part, course);
 
-  const titles = !isEmpty(navigation[lang][part])
-    ? Object.keys(navigation[lang][part]).filter((letter) =>
+  const titles = !isEmpty(partNavigation)
+    ? Object.keys(partNavigation).filter((letter) =>
         isContentVisible(part, letter)
       )
     : [];
 
   const parserOptions = {
-    replace: ({ type, attribs, children }) => {
+    replace: ({ type, name, attribs, children }) => {
+      if (type === 'tag' && name === 'a')
+        return (
+          <CourseAnchor {...attribs}>
+            {domToReact(children, parserOptions)}
+          </CourseAnchor>
+        );
       if (type === 'tag' && attribs.class === 'intro') {
         return (
           <div className="col-7">{domToReact(children, parserOptions)}</div>
@@ -90,11 +100,11 @@ export default function PartIntroTemplate({ data }) {
                     backgroundColor: colors['white'],
                     letter: n,
                     path: getPartTranslationPath(
-                      lang,
+                      n === 'f' && lang !== 'it' ? 'en' : lang,
                       part,
-                      `/${snakeCase(navigation[lang][part][n])}`
+                      `/${snakeCase(partNavigation[n])}`
                     ),
-                    text: `${n} ${navigation[lang][part][n]}`,
+                    text: `${n} ${getCourseTitle(lang, part, n, course)}`,
                   };
                 })}
               />
@@ -109,14 +119,8 @@ export default function PartIntroTemplate({ data }) {
 }
 
 export const partInfoQuery = graphql`
-  query ($part: Int!, $lang: String!) {
-    markdownRemark(
-      frontmatter: {
-        part: { eq: $part }
-        letter: { eq: null }
-        lang: { eq: $lang }
-      }
-    ) {
+  query ($contentId: String!) {
+    markdownRemark(id: { eq: $contentId }) {
       html
       frontmatter {
         mainImage {

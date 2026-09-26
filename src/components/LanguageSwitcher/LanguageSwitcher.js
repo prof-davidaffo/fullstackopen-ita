@@ -2,7 +2,7 @@ import './LanguageSwitcher.scss';
 
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link } from '../CourseTrack';
 import getTranslationPath from '../../utils/getTranslationPath';
 
 const Language = ({ language, active }) => {

@@ -1,5 +1,6 @@
 const IS_DEV = process.env.NODE_ENV === 'development';
 const navigation = require('./src/content/partnavigation/partnavigation');
+const { getCourseNavigation } = require('./src/courseTracks');
 const {
   COURSE_NAME,
   REPOSITORY_URL,
@@ -16,12 +17,11 @@ const automaticPagesPrefix =
     : '/';
 const pathPrefix = process.env.PATH_PREFIX || automaticPagesPrefix;
 
-const ignoredContent = [
-  `${__dirname}/src/content/pages/*`,
-];
+const ignoredContent = [`${__dirname}/src/content/pages/*`];
 
-const isSearchableContent = ({ part, letter, lang }) => {
-  if (letter && !navigation[lang]?.[part]?.[letter]) return false;
+const isSearchableContent = ({ part, letter, lang, course }) => {
+  if (letter && !getCourseNavigation(lang, part, course || 'mongodb')[letter])
+    return false;
   return !letter || isContentVisible(part, letter);
 };
 
@@ -34,10 +34,11 @@ const createSearchConfig = (indexName, language) => {
       engineOptions: 'speed',
       query: `
         {
-          allMarkdownRemark(filter: {frontmatter: {lang: {eq: "${language}"}}}) {
+          allMarkdownRemark(filter: {frontmatter: {lang: {in: ["${language}", "en"]}}}) {
             nodes {
               frontmatter {
                 lang
+                course
                 letter
                 part
               }
@@ -49,17 +50,62 @@ const createSearchConfig = (indexName, language) => {
     `,
       ref: 'id',
       index: ['body'],
-      store: ['id', 'part', 'letter', 'lang'],
+      store: ['id', 'part', 'letter', 'lang', 'course'],
       normalizer: ({ data }) => {
-        return data.allMarkdownRemark.nodes
-          .filter((node) => isSearchableContent(node.frontmatter))
-          .map((node) => ({
-            id: node.id,
-            part: node.frontmatter.part,
-            letter: node.frontmatter.letter,
-            lang: node.frontmatter.lang,
-            body: node.rawMarkdownBody,
-          }));
+        const nodes = data.allMarkdownRemark.nodes.filter((node) =>
+          isSearchableContent(node.frontmatter)
+        );
+        const variants = nodes.filter(
+          (node) => node.frontmatter.course === 'sqlite'
+        );
+        const originals = nodes.filter(
+          (node) =>
+            !node.frontmatter.course && node.frontmatter.lang === language
+        );
+        const rows = originals.flatMap((node) =>
+          ['sqlite', 'mongodb'].map((course) => {
+            const match = (candidate) =>
+              candidate.frontmatter.part === node.frontmatter.part &&
+              candidate.frontmatter.letter === node.frontmatter.letter;
+            const variant =
+              variants.find(
+                (v) => match(v) && v.frontmatter.lang === language
+              ) ||
+              variants.find((v) => match(v) && v.frontmatter.lang === 'en');
+            const source = course === 'sqlite' && variant ? variant : node;
+            return {
+              id: `${node.id}-${course}`,
+              part: node.frontmatter.part,
+              letter: node.frontmatter.letter,
+              lang: language,
+              course,
+              body: source.rawMarkdownBody,
+            };
+          })
+        );
+        const final =
+          variants.find(
+            (v) =>
+              v.frontmatter.letter === 'f' &&
+              v.frontmatter.part === 5 &&
+              v.frontmatter.lang === language
+          ) ||
+          variants.find(
+            (v) =>
+              v.frontmatter.letter === 'f' &&
+              v.frontmatter.part === 5 &&
+              v.frontmatter.lang === 'en'
+          );
+        if (final)
+          rows.push({
+            id: final.id,
+            part: 5,
+            letter: 'f',
+            lang: final.frontmatter.lang,
+            course: 'sqlite',
+            body: final.rawMarkdownBody,
+          });
+        return rows;
       },
     },
   };
@@ -146,7 +192,8 @@ module.exports = {
     title: COURSE_NAME,
     siteUrl: SITE_URL,
     repositoryUrl: REPOSITORY_URL,
-    description: 'A structured path through modern full stack JavaScript development.',
+    description:
+      'A structured path through modern full stack JavaScript development.',
     author: 'Full Stack JavaScript contributors',
   },
   plugins,
