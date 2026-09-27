@@ -64,6 +64,8 @@ the core course (0–5), not every specialization.
 
 ## Development
 
+Use Node.js 22 for local development and production builds.
+
 Install the dependencies and start the site:
 
 ```bash
@@ -73,6 +75,16 @@ npm run develop
 
 Use `npm run check` to verify formatting and `npm run build` to create a
 production build.
+
+## GitHub Pages
+
+In the repository's **Settings → Pages → Build and deployment**, set **Source**
+to **GitHub Actions**. The workflow builds and deploys pushes to `source` and can
+also be started manually from the Actions tab. It uses the built-in GitHub token;
+the old `SEKRED2` secret is no longer needed.
+
+The build uses `npm ci` and automatically sets the Gatsby path prefix from the
+repository name. Course-track and generated-HTML checks run before publication.
 
 ## Origin and license
 

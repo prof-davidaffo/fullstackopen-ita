@@ -4,31 +4,51 @@ on:
   push:
     branches:
       - source
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
-    name: deploy
     runs-on: ubuntu-latest
+    env:
+      GATSBY_CPU_COUNT: '2'
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
-          node-version: '10.x'
-      - name: install
-        run: |
-          npm install
-      - name: build
-        run: |
-          ls -la
-          npm run build
-      - name: git status
-        run: |
-          git status
-      - name: working dir
-        run: |
-          cd public 
-          pwd
-          ls -la
-      - name: Gatsby Publish
-        uses: enriikke/gatsby-gh-pages-action@v2
+          node-version: '22'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Check course tracks
+        run: node tests/course-tracks.test.cjs
+      - name: Build
+        run: npm run build
+      - name: Check generated site
+        run: node tests/built-course-smoke.cjs /${{ github.event.repository.name }}
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          access-token: ${{ secrets.SEKRED2 }}
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
