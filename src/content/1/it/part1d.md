@@ -1182,10 +1182,6 @@ Durante il corso potrebbe essere nel tuo interesse disattivare Copilot per impos
 
 <h3>Esercizi 1.6-1.14</h3>
 
-Per consegnare le soluzioni, pubblica prima il codice su GitHub e poi contrassegna gli esercizi completati nella scheda "my submissions" dell'[applicazione per le consegne](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Ricorda di consegnare **tutti** gli esercizi di una parte **in un'unica soluzione**. Dopo aver consegnato una parte, **non potrai più aggiungervi altri esercizi**.
-
 <i>Alcuni esercizi sviluppano la stessa applicazione. In questi casi è sufficiente consegnarne la versione finale. Se vuoi, puoi creare un commit al termine di ogni esercizio, ma non è obbligatorio.</i>
 
 In alcune situazioni potrebbe essere necessario eseguire dalla radice del progetto il comando seguente:
@@ -1403,6 +1399,6 @@ Realizza la versione finale dell'applicazione, che mostra l'aforisma con il magg
 
 Se più aforismi si trovano a pari merito al primo posto, è sufficiente mostrarne uno.
 
-Questo era l'ultimo esercizio della parte. È il momento di pubblicare il codice su GitHub e contrassegnare tutti gli esercizi completati nella scheda "my submissions" dell'[applicazione per le consegne](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
+Per questa parte, consegna la versione finale di ciascuna applicazione realizzata: <i>courseinfo</i>, <i>unicafe</i> e <i>anecdotes</i>. Includi tutti i file dei progetti, tranne la cartella <i>node_modules</i>.
 
 </div>

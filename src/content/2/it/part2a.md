@@ -575,17 +575,11 @@ Programmare è difficile; per questo userò ogni mezzo possibile per renderlo pi
 
 <h3>Esercizi 2.1-2.5</h3>
 
-Gli esercizi vengono consegnati tramite GitHub e contrassegnati come completati nel [sistema di consegna](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Puoi raccoglierli tutti nello stesso repository oppure usare repository diversi. Se inserisci esercizi di parti differenti nello stesso repository, assegna alle cartelle nomi chiari.
-
-Gli esercizi vengono consegnati **una parte alla volta**. Dopo aver consegnato una parte non sarà più possibile aggiungervi esercizi lasciati incompleti.
-
-Questa parte contiene più esercizi delle precedenti: <i>non consegnare</i> finché non hai completato tutti quelli che intendi svolgere.
+Organizza i progetti in cartelle con nomi chiari, distinguendo le parti e le applicazioni. Per le serie di esercizi che sviluppano la stessa applicazione, è sufficiente consegnare la versione finale.
 
 <h4>2.1: Informazioni sui corsi, passo 6</h4>
 
-Completiamo il codice per visualizzare i corsi iniziato negli esercizi 1.1-1.5. Puoi partire dalle soluzioni modello della Parte 1, disponibili nel sistema di consegna dalla scheda <i>my submissions</i>: nella riga della Parte 1, premi <i>show</i> nella colonna <i>solutions</i>, quindi seleziona _App.jsx_ sotto <i>courseinfo</i>.
+Completiamo il codice per visualizzare i corsi iniziato negli esercizi 1.1-1.5. Riparti dalla versione finale dell'applicazione <i>courseinfo</i> che hai realizzato nella Parte 1.
 
 **Se copi un progetto, potrebbe essere necessario eliminare la cartella <i>node_modules</i> e reinstallare le dipendenze con _npm install_ prima di avviare l'applicazione.**
 

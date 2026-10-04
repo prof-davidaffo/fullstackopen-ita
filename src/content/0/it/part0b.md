@@ -582,9 +582,7 @@ Durante il corso proverai probabilmente anche tu un po' di JavaScript fatigue. P
 <div class="tasks">
   <h3>Esercizi 0.1-0.6</h3>
 
-Gli esercizi vengono consegnati tramite GitHub e contrassegnati come completati nella scheda "my submissions" del [sistema di consegna](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Puoi inserire tutti gli esercizi nella stessa repository oppure usarne più di una. Se raccogli parti diverse nella stessa repository, assegna alle cartelle nomi chiari. Se usi una repository privata, aggiungi _mluukkai_ come collaboratore.
+Organizza gli elaborati in cartelle con nomi chiari, distinguendo le parti e i gruppi di esercizi.
 
 Una possibile struttura è la seguente:
 
@@ -602,25 +600,23 @@ part2
 
 Ogni parte ha una propria cartella, che contiene una sottocartella per ciascun gruppo di esercizi.
 
-Gli esercizi vengono consegnati **una parte alla volta**. Dopo aver consegnato una parte non è più possibile aggiungere gli esercizi mancanti di quella parte.
-
   <h4>0.1: HTML</h4>
 
 Ripassa le basi di HTML leggendo il tutorial di Mozilla: [Introduzione all'HTML](https://developer.mozilla.org/it/docs/Learn/HTML/Introduction_to_HTML/Getting_started).
 
-<i>Questo esercizio non deve essere consegnato su GitHub: è sufficiente leggere il tutorial.</i>
+<i>È sufficiente leggere il tutorial; non è richiesto un elaborato.</i>
 
   <h4>0.2: CSS</h4>
 
 Ripassa le basi di CSS leggendo il tutorial di Mozilla: [Nozioni fondamentali di CSS](https://developer.mozilla.org/it/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
-<i>Questo esercizio non deve essere consegnato su GitHub: è sufficiente leggere il tutorial.</i>
+<i>È sufficiente leggere il tutorial; non è richiesto un elaborato.</i>
 
   <h4>0.3: Form HTML</h4>
 
 Studia le basi dei form HTML attraverso il tutorial Mozilla [Il tuo primo form](https://developer.mozilla.org/it/docs/Learn/Forms/Your_first_form).
 
-<i>Questo esercizio non deve essere consegnato su GitHub: è sufficiente leggere il tutorial.</i>
+<i>È sufficiente leggere il tutorial; non è richiesto un elaborato.</i>
 
   <h4>0.4: Diagramma di una nuova nota</h4>
 
@@ -674,6 +670,6 @@ Crea un diagramma che rappresenti la situazione in cui l'utente apre la versione
 
 Crea un diagramma che rappresenti la situazione in cui l'utente crea una nuova nota usando la versione single-page dell'applicazione.
 
-Questo era l'ultimo esercizio. È il momento di inviare le risposte su GitHub e contrassegnare gli esercizi come completati nel [sistema di consegna](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
+Gli elaborati da consegnare per questa parte sono i tre diagrammi degli esercizi 0.4, 0.5 e 0.6.
 
 </div>

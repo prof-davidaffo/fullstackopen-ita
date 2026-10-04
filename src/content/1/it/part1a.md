@@ -602,13 +602,9 @@ In questa parte non conviene ancora tentare di visualizzare direttamente gli arr
 <div class="tasks">
   <h3>Esercizi 1.1-1.2</h3>
 
-Gli esercizi vengono consegnati tramite GitHub e contrassegnati come completati nella scheda "my submissions" dell'[applicazione per le consegne](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
+Questa parte contiene [altri esercizi](/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14) oltre a quelli riportati qui sotto.
 
-Gli esercizi vengono consegnati **una parte alla volta**. Dopo aver consegnato una parte del corso non è più possibile aggiungervi esercizi lasciati incompleti.
-
-Questa parte contiene [altri esercizi](/en/part1/a_more_complex_state_debugging_react_apps#exercises-1-6-1-14) oltre a quelli riportati qui sotto. <i>Non consegnare il lavoro</i> prima di aver completato tutti gli esercizi della parte che intendi svolgere.
-
-Puoi raccogliere tutti gli esercizi del corso in un solo repository oppure usare più repository. Se conservi esercizi di parti diverse nello stesso repository, assegna alle cartelle nomi chiari.
+Organizza i progetti in cartelle con nomi chiari, distinguendo le parti e le applicazioni.
 
 Una possibile struttura è questa:
 
@@ -622,8 +618,6 @@ part2
   phonebook
   countries
 ```
-
-Consulta questo [repository di esempio](https://github.com/fullstack-hy2020/example-submission-repository).
 
 Ogni parte del corso ha una propria cartella, suddivisa a sua volta nelle cartelle delle diverse serie di esercizi, come <i>unicafe</i> nella parte 1.
 
