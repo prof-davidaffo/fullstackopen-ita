@@ -537,6 +537,4 @@ Después de agregar la autenticación basada en token, las pruebas para agregar 
 
 [Esto](https://github.com/visionmedia/supertest/issues/398) probablemente sea útil al hacer la corrección.
 
-Este es el último ejercicio de esta parte del curso y es hora de enviar tu código a GitHub y marcar todos sus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

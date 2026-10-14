@@ -575,8 +575,6 @@ Programmare è difficile; per questo userò ogni mezzo possibile per renderlo pi
 
 <h3>Esercizi 2.1-2.5</h3>
 
-Organizza i progetti in cartelle con nomi chiari, distinguendo le parti e le applicazioni. Per le serie di esercizi che sviluppano la stessa applicazione, è sufficiente consegnare la versione finale.
-
 <h4>2.1: Informazioni sui corsi, passo 6</h4>
 
 Completiamo il codice per visualizzare i corsi iniziato negli esercizi 1.1-1.5. Riparti dalla versione finale dell'applicazione <i>courseinfo</i> che hai realizzato nella Parte 1.

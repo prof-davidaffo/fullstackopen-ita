@@ -46,3 +46,39 @@ assert(last.includes(`href="${prefix}/it/part5/pubblicare_lapplicazione"`));
 console.log(
   'Built HTML passed: both tracks, correct selected option, prefixed navigation, search and final deployment.'
 );
+
+const walk = (dir) =>
+  fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
+    const file = path.join(dir, entry.name);
+    return entry.isDirectory() ? walk(file) : [file];
+  });
+let checked = 0;
+for (const file of walk(path.join(__dirname, '../public')).filter(
+  (file) =>
+    /\/(?:part\d+|osa\d+)(?:\/|$)/.test(file) && file.endsWith('/index.html')
+)) {
+  const html = fs.readFileSync(file, 'utf8');
+  for (const [, href] of html.matchAll(/href="([^"]+)"/g)) {
+    assert.doesNotMatch(
+      href,
+      /https?:\/\/(?:fullstackopen\.com|(?:study|studies)\.cs\.helsinki\.fi\/(?:stats|discord)|courses\.mooc\.fi\/org\/uh-cs\/courses\/full-stack-open-)/,
+      file
+    );
+    if (file.includes('/it/part') && href.startsWith(prefix + '/')) {
+      const target = href.slice(prefix.length).split(/[?#]/)[0];
+      if (/\/(?:part|osa)\d+/.test(target)) {
+        assert(
+          fs.existsSync(
+            path.join(__dirname, '../public', target, 'index.html')
+          ),
+          `${file}: ${href}`
+        );
+      }
+    }
+  }
+  assert(!html.includes('ask GitHub user'), file);
+  checked++;
+}
+console.log(
+  `Checked ${checked} course pages: no upstream portal links; Italian chapter links resolve locally.`
+);

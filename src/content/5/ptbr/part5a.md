@@ -551,8 +551,6 @@ O código da aplicação atual pode ser encontrado no [GitHub](https://github.co
 
 Nós agora criaremos um frontend para o backend do bloglist que criamos na última parte. Você pode usar [esta aplicação](https://github.com/fullstack-hy2020/bloglist-frontend) do GitHub como base para sua solução. A aplicação espera que seu backend esteja em execução na porta 3003.
 
-É suficiente enviar sua solução final. Você pode fazer um commit após cada exercício, mas isso não é necessário.
-
 Os primeiros exercícios revisam tudo o que aprendemos sobre React até agora. Eles podem ser desafiadores, especialmente se seu backend estiver incompleto. Pode ser melhor usar o backend que marcamos como resposta para a parte 4.
 
 Enquanto faz os exercícios, lembre-se de todos os métodos de depuração que discutimos, especialmente prestando atenção no console.

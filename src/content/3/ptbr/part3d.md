@@ -394,6 +394,4 @@ Muitas empresas definem padrões de código que são aplicados em toda a organiz
 
 Adicione o ESlint à sua aplicação e corrija todos os avisos.
 
-Este foi o último exercício para esta parte do curso, e é hora de enviar seu código para o GitHub e marcar todos os seus exercícios concluídos na guia "my submissions" do [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

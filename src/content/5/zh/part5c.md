@@ -5,12 +5,6 @@ letter: c
 lang: zh
 ---
 
-<div class="tasks">
-
-2024年3月3日，本部分使用的测试库从Jest更改为Vitest。如果您已经开始使用Jest进行本部分的工作，您可以在[这里](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io/blob/02d8be28b1c9190f48976fbbd2435b63261282df/src/content/5/zh/part5c.md)查看旧内容。
-
-</div>
-
 <div class="content">
 
 有许多不同的方法可以测试React应用程序。让我们来看看它们。

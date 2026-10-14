@@ -624,6 +624,4 @@ const api_key = import.meta.env.VITE_SOME_KEY
 
 Ten en cuenta que deberás reiniciar el servidor para aplicar los cambios.
 
-Este fue el último ejercicio de esta parte del curso. Es hora de subir tu código a GitHub y marcar todos tus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

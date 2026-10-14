@@ -463,29 +463,9 @@ Custom hooks come with a set of rules, for example, their names are expected to 
 
 <div class="tasks">
 
-### Submission repository
+### Exercise projects
 
-Unlike in previous course parts, the exercises for this part are made in a separate repository.
-
-So create now a new repository, inside of which you copy the contents of this repository https://github.com/fullstack-hy2020/fs-statemanagement
-
-All of the repository content (except the .git directory) must be copied to the root directory of your repository. So the content of your submission repository root should be exactly as follows:
-
-```bash
-.git 
-.github
-.gitignore
-unicafe
-unicafe-tests
-anecdotes
-anecdotes-tests
-query-anecdotes
-query-anecdotes-tests
-```
-
-There are also automated tests for all the apps that are developed in the exercises of this part.
-
-**From 21st September it is mandatory to have passing tests for submissions**
+Use the starter projects in https://github.com/fullstack-hy2020/fs-statemanagement. The repository also contains automated tests that you can run locally.
 
 ### Exercise 1
 
@@ -500,8 +480,6 @@ Your application's appearance and functionality should be the same as in Part 1:
 ![](../../images/1/16e.png)
 
 #### Bonus: Unicafe tests
-
-**From 21st September it is mandatory to have passing tests for submissions**
 
 The exercise repository https://github.com/fullstack-hy2020/fs-statemanagement contains tests for all the apps that are developed in the exercises of this part. Run the tests for the previous exercise locally now:
 
@@ -827,7 +805,7 @@ The current code of the application is available in its entirety on [GitHub](htt
 
 Let's implement a new version of the anecdote voting application from Part 1. 
 
-Use the project in the *anecdotes* directory of the submission repository as the base for your solution.
+Use the project in the *anecdotes* directory of the exercise repository as the base for your solution.
 
 #### 6.2: anecdotes, step1
 

@@ -544,7 +544,7 @@ TanStack Query on siis kirjasto, joka ylläpitää frontendissä <i>palvelimen t
 
 Tehdään nyt anekdoottisovelluksesta uusi, TanStack Query ‑kirjastoa hyödyntävä versio.
 
-Ota ratkaisusi pohjaksi palautusrepositoriosi hakemistossa *query-anecdotes* oleva projekti.
+Ota ratkaisusi pohjaksi harjoitusrepositoriosi hakemistossa *query-anecdotes* oleva projekti.
 
 Sovelluksen tulee toimia siten, että jos palvelimen kanssa kommunikoinnissa ilmenee ongelmia, tulee näkyviin ainoastaan virhesivu:
 
@@ -589,8 +589,6 @@ Toteuta anekdoottien äänestäminen hyödyntäen jälleen TanStack Queryä. Sov
 Eriytä TanStack Queryn yksityiskohdat custom hook -funktioon.
 
 #### Bonus: testit, osa 1
-
-**21.9. lähtien tehtävien palautuksissa vaaditaan läpimenevät testit**
 
 Tehtävärepositorio https://github.com/fullstack-hy2020/fs-statemanagement sisältää testit myös edellisissä tehtävissä tehdylle sovellukselle.
 
@@ -1028,11 +1026,7 @@ Virhetilanne kannattaa käsitellä sille rekisteröidyssä takaisinkutsufunktios
 
 Jos et jo niin tehnyt, siirrä notifikaatioon liittyvä konteksti omaan tiedostoonsa <i>NotificationContext.jsx</i>, samaan tapaan kuin laskurisovelluksessa konteksti siirrettiin tiedostoon <i>CounterContext.jsx</i>. Luo myös custom hook <i>useNotify</i>, joka kapseloi notifikaatioon liittyvän logiikan. Yksinkertaista notifikaatiota käyttäviä komponentteja siten, että ne käyttävät hookia suoraan sen sijaan, että kutsuvat <i>useContext</i>ia erikseen.
 
-Tämä oli osan viimeinen tehtävä ja on aika pushata koodi GitHubiin sekä merkata tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 #### Bonus: testit, osa 2
-
-**21.9. lähtien tehtävien palautuksissa vaaditaan läpimenevät testit**
 
 Tehtävärepositorio https://github.com/fullstack-hy2020/fs-statemanagement sisältää testit myös edellisille tehtäville.
 

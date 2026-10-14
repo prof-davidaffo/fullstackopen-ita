@@ -1338,6 +1338,4 @@ Realiza una prueba que verifique que los blogs estén ordenados de acuerdo con l
 
 <i>Este ejercicio puede ser un poco más complicado que los anteriores.</i>
 
-Este fue el último ejercicio de esta parte, y es hora de enviar tu código a GitHub y marcar los ejercicios que has completado en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

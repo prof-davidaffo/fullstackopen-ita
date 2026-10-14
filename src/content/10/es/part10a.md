@@ -25,23 +25,9 @@ Desarrollaremos una aplicación para calificar repositorios de [GitHub](https://
 
 ![Vista previa de la aplicación](../../images/10/4.png)
 
-Todos los ejercicios de esta parte deben enviarse a <i>un único repositorio de GitHub</i> que eventualmente contendrá el código fuente completo de su aplicación. Habrá soluciones modelo disponibles para cada sección de esta parte que puede utilizar para completar las presentaciones incompletas. Esta parte está estructurada en base a la idea de que usted desarrolla su aplicación a medida que avanza en el material. Así que <i>no</i> espere hasta los ejercicios para comenzar el desarrollo. En su lugar, desarrolle su aplicación al mismo ritmo que avanza el material.
+Desarrolla la aplicación progresivamente a medida que avances en esta parte.
 
 Esta parte se basará en gran medida en los conceptos cubiertos en las partes anteriores. Antes de comenzar esta parte, necesitará conocimientos básicos de JavaScript, React y GraphQL. No se requiere un conocimiento profundo del desarrollo del lado del servidor y se le proporciona todo el código del lado del servidor. Sin embargo, realizaremos solicitudes de red desde sus aplicaciones React Native, por ejemplo, utilizando consultas GraphQL. Las partes recomendadas para completar antes de esta parte son [parte 1](/es/part1), [parte 2](/es/part2), [parte 5](/es/part5), [parte 7] (/es/part7) y [parte 8](/es/part8).
-
-### Envío de ejercicios y obtención de créditos
-
-Los ejercicios se envían a través del [sistema de presentaciones](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020) al igual que en las partes anteriores. Tenga en cuenta que los ejercicios de esta parte se envían <i>a una instancia de curso diferente</i> que en las partes 0-9. Las partes 1 a 4 en el sistema de presentación se refieren a las secciones a-d en esta parte. Esto significa que enviará los ejercicios de una sola sección a la vez, comenzando con esta sección, "Introducción a React Native", que es la parte 1 del sistema de envío.
-
-Durante esta parte, obtendrá créditos en función de la cantidad de ejercicios que complete. Si completa <i>al menos 19 ejercicios</i> en esta parte, obtendrá <i>1 crédito</i>. Si completa <i>al menos 26 ejercicios</i> en esta parte, obtendrá <i>2 créditos</i>.
-
-Una vez que haya completado los ejercicios y desee obtener los créditos, háganos saber a través del sistema de envío de ejercicios que ha completado el curso:
-
-![Envío de ejercicios para créditos](../../images/10/23.png)
-
-Tenga en cuenta que la nota "examen realizado en Moodle" se refiere al [examen del curso Full Stack Open](/en/part0), que <i>debe completarse</i> antes de poder obtener créditos de esta parte.
-
-Puede descargar el certificado por completar esta parte haciendo clic en uno de los iconos de bandera. El icono de la bandera corresponde al idioma del certificado. Tenga en cuenta que debe haber completado al menos un crédito de ejercicios antes de poder descargar el certificado.
 
 ### Inicializando la aplicación
 
@@ -112,10 +98,6 @@ Cuando la aplicación móvil Expo haya terminado de instalarse, ábrala. A conti
 
 Inicialice su aplicación con la interfaz de línea de comandos de Expo y configure el entorno de desarrollo utilizando un emulador o la aplicación móvil de Expo. Se recomienda probar ambos y averiguar qué entorno de desarrollo es el más adecuado para usted. El nombre de la aplicación no es tan relevante. Puede, por ejemplo, usar <i>rate-repository-app</i>.
 
-Para enviar este ejercicio y todos los ejercicios futuros, debe [crear un nuevo repositorio de GitHub](https://github.com/new). El nombre del repositorio puede ser, por ejemplo, el nombre de la aplicación que inicializó con <em>expo init</em>. Si decide crear un repositorio privado, agregue al usuario de GitHub [mluukkai](https://github.com/mluukkai) como [colaborador del repositorio](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository). El estado de colaborador solo se utiliza para verificar sus envíos.
-
-Ahora que se creó el repositorio, ejecute <em>git init</em> dentro del directorio raíz de su aplicación para asegurarse de que el directorio se inicialice como un repositorio Git. A continuación, para agregar el repositorio creado como la ejecución remota <<em>git remote add origin git@github.com:<YOUR_GITHUB_USERNAME>/<NAME_OF_YOUR_REPOSITORY>.git</em> (recuerde reemplazar los valores de marcador de posición en el comando). Finalmente, simplemente confirme e inserte sus cambios en el repositorio y ya está.
-
 </div>
 
 <div class="content">
@@ -184,8 +166,6 @@ La configuración de ESLint proporcionada contiene solo la base para la configur
 #### Ejercicio 10.2: configuración de ESLint
 
 Configure ESLint en su proyecto para que pueda realizar comprobaciones de linter ejecutando <em>npm run lint</em>. Para aprovechar al máximo el linting, también se recomienda integrar ESLint con su editor.
-
-Este fue el último ejercicio de esta sección. Es hora de enviar tu código a GitHub y marcar todos tus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020). Tenga en cuenta que los ejercicios de esta sección deben enviarse a la parte 1 del sistema de envío de ejercicios.
 
 </div>
 

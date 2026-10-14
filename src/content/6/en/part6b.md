@@ -759,8 +759,6 @@ We notice that some of the anecdotes added by users are not very good. Implement
 
 #### Bonus: anecdotes tests
 
-**From 21st September it is mandatory to have passing tests for submissions**
-
 The exercise repository https://github.com/fullstack-hy2020/fs-statemanagement also contains tests for the Anecdotes app. 
 
 Ensure that the tests now pass locally:
@@ -1325,8 +1323,6 @@ Write a test that verifies the correct React component receives a properly filte
 Write a test that verifies that voting increases the number of votes for an anecdote.
 
 #### Bonus: testing the tests
-
-**From 21st September it is mandatory to have passing tests for submissions**
 
 The exercise repository https://github.com/fullstack-hy2020/fs-typescript also contains some "tests" for the tests you did in previous exercises.
 

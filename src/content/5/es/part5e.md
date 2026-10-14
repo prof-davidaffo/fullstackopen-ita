@@ -1105,6 +1105,4 @@ Personaliza como prefieras la apariencia del componente que muestra un único bl
 
 ![](../../images/5/l14.png)
 
-Este fue el último ejercicio de la sección; es hora de enviar el código a GitHub y marcar los ejercicios completados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

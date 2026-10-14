@@ -670,6 +670,4 @@ Crea un diagramma che rappresenti la situazione in cui l'utente apre la versione
 
 Crea un diagramma che rappresenti la situazione in cui l'utente crea una nuova nota usando la versione single-page dell'applicazione.
 
-Gli elaborati da consegnare per questa parte sono i tre diagrammi degli esercizi 0.4, 0.5 e 0.6.
-
 </div>

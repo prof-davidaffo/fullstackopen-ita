@@ -32,30 +32,10 @@ lang: zh
 
 ![Application preview](../../images/10/4.png)
 
-<!-- All the exercises in this part have to be submitted into <i>a single GitHub repository</i> which will eventually contain the entire source code of your application. There will be model solutions available for each section of this part which you can use to fill in incomplete submissions. This part is structured based on the idea that you develop your application as you progress in the material. So <i>do not</i> wait until the exercises to start the development. Instead, develop your application in the same pace as the material progresses.-->
- 本章节的所有练习都必须提交到<i>一个GitHub仓库</i>，该仓库最终将包含你的应用的全部源代码。本章节的每一节都会有模型解决方案，你可以用它来填补不完整的提交。这一部分的结构是基于这样的想法，即随着你在材料中的进展，你会开发你的应用。所以<i>不要</i>等到练习时才开始开发。相反，随着教材的进展，以同样的速度开发你的应用。
+随着学习本章节的内容，逐步开发应用。
 
 <!-- This part will heavily rely on concepts covered in the previous parts. Before starting this part you will need basic knowledge of JavaScript, React and GraphQL. Deep knowledge of server-side development is not required and all the server-side code is provided for you. However, we will be making network requests from your React Native applications, for example, using GraphQL queries. The recommended parts to complete before this part are [part 1](/en/part1), [part 2](/en/part2), [part 5](/en/part5), [part 7](/en/part7) and [part 8](/en/part8).-->
  本章节将严重依赖前几部分所涉及的概念。在开始这部分之前，你需要有JavaScript、React和GraphQL的基本知识。不需要深层次的服务器端开发知识，所有的服务器端代码都为你提供。然而，我们将从你的React Native应用中提出网络请求，例如，使用GraphQL查询。在这部分之前推荐完成的部分是[第1章节](/en/part1)、[第2章节](/en/part2)、[第5章节](/en/part5)、[第7章节](/en/part7)和[第8章节](/en/part8) 。
-
-### Submitting exercises and earning credits
-
-<!-- Exercises are submitted via the [submissions system](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020) just like in the previous parts. Note that, exercises in this part are submitted <i>to a different course instance</i> than in parts 0-9. The parts 1-4 in the submission system refer to the sections a-d in this part. This means that you will be submitting exercises a single section at a time starting with this section, "Introduction to React Native", which is part 1 in the submission system.-->
- 练习是通过[提交系统](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020)提交的，就像前面的部分。请注意，这一部分的习题与第0-9部分相比，是提交给不同的课程实例</i>。提交系统中的1-4部分是指本章节的a-d部分。这意味着，你将从这部分 "React Native简介 "开始，每次提交一个部分的练习，这部分是提交系统中的第1章节。
-
-<!-- During this part you will earn credits based on the number of exercises you complete. Completing <i>at least 25 exercises</i> in this part will earn you <i>2 credits</i>. Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
- 在这部分中，你将根据你完成的练习的数量获得学分。在这部分完成<i>至少25个练习</i>将获得<i>2学分</i>。一旦你完成了练习并想获得学分，请通过练习提交系统告诉我们你已经完成了该课程。
-
-![Submitting exercises for credits](../../images/10/23.png)
-
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which <i>has to be completed</i> before you can earn credits from this part.-->
- 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程''的考试](/en/part0)，在你从这部分获得学分之前，必须完成<i></i>。
-
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
- **注意**你需要注册相应的课程部分来获得学分，更多信息请看[这里](/en/part0)。
-
-<!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language. Note that you must have completed at least one credit worth of exercises before you can download the certificate.-->
- 你可以通过点击其中一个旗帜图标下载完成这部分的证书。旗帜图标与证书的语言相对应。注意，你必须至少完成一个学分的练习才能下载证书。
 
 ### Initializing the application
 
@@ -145,12 +125,6 @@ expo init rate-repository-app --template expo-template-blank@sdk-44 --npm
 <!-- Initialize your application with Expo command-line interface and set up the development environment either using an emulator or Expo's mobile app. It is recommended to try both and find out which development environment is the most suitable for you. The name of the application is not that relevant. You can, for example, go with <i>rate-repository-app</i>.-->
  用Expo命令行界面初始化你的应用，并使用模拟器或Expo's移动应用设置开发环境。建议同时尝试一下，找出最适合你的开发环境。应用的名称并不那么重要。例如，你可以用<i>rate-repository-app</i>。
 
-<!-- To submit this exercise and all the future exercises you need to [create a new GitHub repository](https://github.com/new). The name of the repository can be for example the name of the application you initialized with <em>expo init</em>. If you decide to create a private repository, add GitHub user [mluukkai](https://github.com/mluukkai) as a [repository collaborator](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository). The collaborator status is only used for verifying your submissions.-->
- 要提交这个练习和所有未来的练习，你需要[创建一个新的 GitHub 仓库](https://github.com/new)。仓库的名字可以是你用<em>expo init</em>初始化的应用的名字。如果你决定创建一个私有仓库，请将 GitHub 用户 [mluukkai](https://github.com/mluukkai) 添加为 [仓库合作者](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository) 。合作者的身份只用于验证你的提交。
-
-<!-- Now that the repository is created, run <em>git init</em> within your application's root directory to make sure that the directory is initialized as a Git repository. Next, to add the created repository as the remote run <em>git remote add origin git@github.com:<YOUR_GITHUB_USERNAME>/<NAME_OF_YOUR_REPOSITORY>.git</em> (remember to replace the placeholder values in the command). Finally, just commit and push your changes into the repository and you are all done.-->
- 现在仓库已经创建，在你的应用的根目录下运行<em>git init</em>，以确保该目录被初始化为一个 Git 仓库。接下来，为了将创建的仓库添加为远程仓库，运行<em>git remote add origin git@github.com:<YOUR_GITHUB_USERNAME>/<NAME_OF_YOUR_REPOSITORY>.git</em>（记住要替换命令中的占位符值）。最后，提交并将你的修改推送到版本库中，你就完成了。
-
 </div>
 
 <div class="content">
@@ -224,8 +198,6 @@ npm install --save-dev eslint @babel/eslint-parser eslint-plugin-react eslint-pl
 <!-- Set up ESLint in your project so that you can perform linter checks by running <em>npm run lint</em>. To get most of linting it is also recommended to integrate ESLint with your editor.-->
  在你的项目中设置ESLint，这样你就可以通过运行<em>npm run lint</em>来进行linter检查。为了获得大部分的linting，我们还建议将ESLint与你的编辑器集成。
 
-<!-- This was the last exercise in this section. It's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020). Note that exercises in this section should be submitted to the part 1 in the exercise submission system.-->
- 这是本节的最后一个练习。现在是时候把你的代码推送到GitHub，并把你所有完成的练习标记到[练习提交系统](https://studies.cs.helsinki.fi/stats/courses/fs-react-native-2020)。注意，本节的练习应该提交给练习提交系统中的第1章节。
 </div>
 
 <div class="content">

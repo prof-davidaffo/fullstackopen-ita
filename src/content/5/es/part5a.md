@@ -532,8 +532,6 @@ El código de la aplicación actual se puede encontrar en [GitHub](https://githu
 
 Ahora crearemos un frontend para el backend de la lista de blogs que creamos en la última parte. Puedes usar [esta aplicación](https://github.com/fullstack-hy2020/bloglist-frontend) de GitHub como base para tu solución. Debes conectar tu backend con un proxy como se muestra en [la parte 3](/es/part3/despliegue_de_la_aplicacion_a_internet#proxy).
 
-Es suficiente con enviar tu solución terminada. Puedes hacer un commit después de cada ejercicio, pero eso no es necesario.
-
 Los primeros ejercicios revisan todo lo que hemos aprendido sobre React hasta ahora. Pueden ser un desafío, especialmente si tu backend está incompleto.
 Podría ser mejor usar el backend de la respuesta modelo de la parte 4.
 

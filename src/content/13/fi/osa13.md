@@ -6,6 +6,6 @@ lang: fi
 
 <div class="intro">
 
-Osan materiaali siirtynyt osoitteeseen <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-relational-databases">https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-relational-databases</a>
+Tämän oppimateriaalin sisältö on koottu [osaan 13](/es/part13). Luvut ovat saatavilla espanjaksi.
 
 </div>

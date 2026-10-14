@@ -579,19 +579,9 @@ Programar é difícil, e é por isso que eu usarei todos os meios possíveis par
 
 <h3>Exercícios 2.1 a 2.5</h3>
 
-Envie suas soluções aos exercícios dando "push" para seu repositório no GitHub e, em seguida, marque os exercícios concluídos na guia "my submissions" no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Lembre-se: envie **todos** os exercícios de uma parte **de uma única vez**; isto é, envie todas as suas soluções de uma vez para seu repositório. Uma vez que você tenha enviado suas soluções para uma parte, **não é mais possível enviar mais exercícios para essa parte**.
-
-<i> Alguns dos exercícios funcionam na mesma aplicação. Nestes casos, é suficiente enviar apenas a versão final da aplicação. Se desejar, você pode fazer um "commit" após cada exercício concluído, mas isso não é obrigatório.</i>
-
-**AVISO**: "create-react-app" transformará automaticamente seu projeto em um repositório git, a menos que você crie sua aplicação dentro de um repositório git já existente. **Você muito provavelmente não quer que cada um de seus projetos seja um repositório separado**, então basta executar o comando _rm -rf .git_ na raiz de sua aplicação para aplicar as modificações.
-
-**Obs.:** o conteúdo dos exercícios foram deixados no idioma original da tradução (inglês) por questões de conveniência, visto a revisão que os mantenedores do curso devem fazer no código enviado ao sistema de avaliação da Universidade de Helsinque. Desta forma, escreva suas aplicações utilizando os mesmos termos usados nas variáveis, componentes, etc que estão em inglês.
-
 <h4>2.1: Course information — 6º passo</h4>
 
-Vamos finalizar o código para que possamos renderizar os conteúdos do curso dos exercícios 1.1 a 1.5. Você pode começar com o código das respostas-modelo. As respostas-modelo da Parte 1 podem ser encontradas no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen), clicando em <i>"my submissions"</i> em cima; vá até a linha correspondente à Parte 1 na coluna <i>"solutions"</i> e clique em <i>show</i>. Para ver a solução para o exercício <i>course info</i>, clique em _index.js_ abaixo de <i>kurssitiedot</i> ("kurssitiedot" significa "course info" ou "informações do curso").
+Continue desenvolvendo a aplicação courseinfo dos exercícios 1.1–1.5.
 
 **Note que se você copiar um projeto de um lugar para outro, é provável que terá de excluir o diretório <i>node\_modules</i> e instalar as dependências novamente com o comando _npm install_ antes de iniciar a aplicação.** Em geral, não é recomendado que você copie todo o conteúdo de um projeto e/ou adicione o diretório <i>node\_modules</i> ao sistema de controle de versão.
 

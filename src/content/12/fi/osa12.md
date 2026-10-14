@@ -6,6 +6,6 @@ lang: fi
 
 <div class="intro">
 
-Osan materiaali siirtynyt osoitteeseen <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-containers">https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-containers</a>
+Tämän oppimateriaalin sisältö on koottu [osaan 12](/es/part12). Luvut ovat saatavilla espanjaksi.
 
 </div>

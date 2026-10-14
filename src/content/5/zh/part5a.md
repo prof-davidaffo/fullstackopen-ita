@@ -593,9 +593,6 @@ window.localStorage.clear()
 <!-- We will now create a frontend for the bloglist backend we created in the last part. You can use [this application](https://github.com/fullstack-hy2020/bloglist-frontend) from GitHub as the base of your solution. The application expects your backend to be running on port 3003.-->
  我们现在将为我们在上一部分创建的博客列表后端创建一个前端。你可以使用GitHub上的[此应用](https://github.com/fullstack-hy2020/bloglist-frontend)作为你的解决方案的基础。该应用希望你的后端运行在3003端口。
 
-<!-- It is enough to submit your finished solution. You can do a commit after each exercise, but that is not necessary.-->
-提交你完成的解决方案就可以了。你可以在每次练习后做一次提交，但这不是必须的。
-
 <!-- The first few exercises revise everything we have learned about React so far. They can be challenging, especially if your backend is incomplete.-->
  前几个练习是对我们到目前为止所学的关于React的所有知识的回顾。它们可能很有挑战性，特别是如果你的后端不完整的话。
 <!-- It might be best to use the backend from model answers of part 4.-->

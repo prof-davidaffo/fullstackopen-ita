@@ -578,17 +578,9 @@ Programming is hard, that is why I will use all the possible means to make it ea
 
 <h3>Exercises 2.1.-2.5.</h3>
 
-The exercises are submitted via GitHub, and by marking the exercises as done in the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-You can submit all of the exercises into the same repository, or use multiple different repositories. If you submit exercises from different parts into the same repository, name your directories well.
-
-The exercises are submitted **One part at a time**. When you have submitted the exercises for a part, you can no longer submit any missed exercises for that part.
-
-Note that this part has more exercises than the ones before, so <i>do not submit</i> until you have done all the exercises from this part you want to submit.
-
 <h4>2.1: Course information step 6</h4>
 
-Let's finish the code for rendering course contents from exercises 1.1 - 1.5. You can start with the code from the model answers. The model answers for part 1 can be found by going to the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen), clicking on <i>my submissions</i> at the top, and in the row corresponding to part 1 under the <i>solutions</i> column clicking on <i>show</i>. To see the solution to the <i>course info</i> exercise, click on _App.jsx_ under <i>courseinfo</i>.
+Let's finish the code for rendering course contents from exercises 1.1–1.5. Continue from the final version of the courseinfo application you built in Part 1.
 
 **Note that if you copy a project from one place to another, you might have to delete the <i>node\_modules</i> directory and install the dependencies again with the command _npm install_ before you can start the application.**
 

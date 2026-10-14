@@ -6,6 +6,6 @@ lang: fi
 
 <div class="intro">
 
-Osan materiaali osoitteessa <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-nextjs">https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-nextjs</a>
+Next.js-materiaalia ei ole vielä saatavilla tässä oppimateriaalissa.
 
 </div>

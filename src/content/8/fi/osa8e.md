@@ -987,8 +987,6 @@ query {
 
 ### Tehtävien palautus ja suoritusmerkinnän pyytäminen
 
-Tämän osat palautetaan edellisistä osista poiketen [palautussovelluksessa](https://studies.cs.helsinki.fi/stats/courses/fs-graphql) omaan kurssi-instanssiinsa. Huomaa, että tarviset suoritukseen vähintään 22 tehtävää!
-
 Jos haluat suoritusmerkinnän, merkitse kurssi suoritetuksi:
 
 ![Submissions](../../images/11/21.png)

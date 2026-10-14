@@ -630,8 +630,6 @@ const api_key = import.meta.env.VITE_SOME_KEY
 
 N’oubliez pas que si vous modifiez des variables d’environnement, vous devez redémarrer le serveur de développement pour que les changements soient pris en compte.
 
-C'était le dernier exercice de cette partie du cours. Il est temps de transmettre votre code à GitHub et de marquer tous vos exercices terminés dans le [système de soumission d'exercices](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>
 
 

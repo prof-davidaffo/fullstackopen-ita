@@ -1083,23 +1083,4 @@ query {
 }
 ```
 
-### Submitting exercises and getting the credits
-
-<!-- Exercises of this part are submitted via [the submissions system](https://studies.cs.helsinki.fi/stats/courses/fs-graphql) just like in the previous parts, but unlike previous parts, the submission goes to different "course instance". Remember that you have to finish at least 22 exercises to pass this part!-->
- 这一部分的练习是通过[提交系统](https://studies.cs.helsinki.fi/stats/courses/fs-graphql)提交的，就像前几部分一样，但与前几部分不同，提交到不同的 "课程实例"。请记住，你必须完成至少22道练习才能通过这一部分!
-
-<!-- Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
-一旦你完成了练习并想获得学分，请通过练习提交系统告诉我们你已经完成了课程。
-
-![Submissions](../../images/11/21.png)
-
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
- 注意 "在Moodle中完成考试 "的说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
-
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
- **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0)。
-
-<!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.-->
- 你可以通过点击其中一个旗帜图标下载完成这部分的证书。旗帜图标与证书的语言相对应。
-
 </div>

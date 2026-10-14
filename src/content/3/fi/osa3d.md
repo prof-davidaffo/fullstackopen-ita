@@ -482,6 +482,4 @@ Sovelluksen tämänhetkinen koodi on kokonaisuudessaan [GitHubissa](https://gith
 
 Ota sovellukseesi käyttöön ESLint, ja korjaa kaikki tyylivirheet.
 
-Tämä oli osan viimeinen tehtävä, joten on aika pushata koodi GitHubiin sekä merkata tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

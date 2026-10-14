@@ -1022,12 +1022,6 @@ Les liens suivants peuvent vous être utiles :
 
 <h3>Exercices 1.6.-1.14.</h3>
 
-Soumettez vos solutions aux exercices en transmettant d'abord votre code à GitHub, puis en marquant les exercices terminés dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-N'oubliez pas de soumettre **tous** les exercices d'une partie **en une seule soumission**. Une fois que vous avez soumis vos solutions pour une partie, **vous ne pouvez plus soumettre d'autres exercices pour cette partie**.
-
-<i>Certains des exercices fonctionnent sur la même application. Dans ces cas, il suffit de soumettre uniquement la version finale de la demande. Si vous le souhaitez, vous pouvez effectuer un commit après chaque exercice terminé, mais ce n'est pas obligatoire.</i>
-
 Dans certaines situations, vous devrez peut-être également exécuter la commande ci-dessous à partir de la racine du projet :
 
 ```bash
@@ -1234,7 +1228,5 @@ Implémentez maintenant la version finale de l'application qui affiche l'anecdot
 ![](../../images/1/20a.png)
 
 Si plusieurs anecdotes sont à égalité pour la première place, il suffit d'en montrer une seule.
-
-C'était le dernier exercice de cette partie du cours et il est temps de pusher votre code vers GitHub et de marquer tous vos exercices terminés dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

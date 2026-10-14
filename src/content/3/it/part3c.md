@@ -61,7 +61,7 @@ La strategia peggiore quando compare un errore è continuare ad aggiungere codic
 
 Per conservare le note serve un database. In questa parte useremo [MongoDB](https://www.mongodb.com/), un [database a documenti](https://en.wikipedia.org/wiki/Document-oriented_database).
 
-MongoDB viene introdotto perché richiede meno concetti iniziali rispetto a un database relazionale. La [parte 13](/it/part13) mostra invece backend Node.js basati su database relazionali.
+MongoDB viene introdotto perché richiede meno concetti iniziali rispetto a un database relazionale. La [parte 13](/es/part13) mostra invece backend Node.js basati su database relazionali.
 
 I database a documenti differiscono da quelli relazionali nell'organizzazione e nel linguaggio di interrogazione e appartengono alla categoria [NoSQL](https://en.wikipedia.org/wiki/NoSQL).
 

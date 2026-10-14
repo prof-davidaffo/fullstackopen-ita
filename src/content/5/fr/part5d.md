@@ -1212,6 +1212,4 @@ cy.get('.blog').eq(1).should('contain', 'The title with the second most likes')
 
 Notez que vous pourriez rencontrer des problèmes si vous cliquez plusieurs fois de suite sur un bouton de like. Il se peut que Cypress clique si rapidement qu'il n'ait pas le temps de mettre à jour l'état de l'application entre les clics. Un remède à cela est d'attendre que le nombre de likes se mette à jour entre tous les clics.
 
-C'était le dernier exercice de cette partie, et il est temps de pousser votre code sur GitHub et de marquer les exercices que vous avez complétés dans le [système de soumission des exercices](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

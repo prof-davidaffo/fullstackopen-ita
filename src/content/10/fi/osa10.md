@@ -6,7 +6,6 @@ lang: fi
 
 <div class="intro">
 
-Osan 9 materiaali on siirretty osoitteeseen <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-react-native">
-    https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-react-native</a>
+Tämän oppimateriaalin sisältö on koottu [osaan 10](/en/part10).
 
 </div>

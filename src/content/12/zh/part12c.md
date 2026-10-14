@@ -659,7 +659,7 @@ todo-app
 #### Exercise 12.19: Connect the services, todo-frontend with todo-backend
 
 <!-- > In this exercise, submit the entire development environment, including both Express and React applications, Dockerfiles and docker-compose.yml.-->
- > 在这个练习中，提交整个开发环境，包括Express和React应用，Dockerfiles和docker-compose.yml。
+ > 为Express和React应用创建完整的开发环境，包括Dockerfiles和docker-compose.yml。
 
 <!-- Make sure that the todo-frontend works with todo-backend. It will require changes to the *REACT\_APP\_BACKEND\_URL* environmental variable.-->
  确保todo-frontend与todo-backend一起工作。这将需要改变*REACT\_APP\_BACKEND\_URL*环境变量。
@@ -713,8 +713,8 @@ todo-app
 
 #### Exercise 12.21:
 
-<!-- Create a similar containerized development environment of one of <i>your own</i> full stack apps that you have created during the course or in your free time. You should structure the app in your submission repository as follows:-->
-为你在课程中或空闲时间创建的一个<i>你自己的</i>全栈应用创建一个类似的容器化开发环境。你应该在你提交的仓库中对该应用进行如下结构设计。
+<!-- Create a similar containerized development environment of one of <i>your own</i> full stack apps that you have created during the course or in your free time. You should structure the app in your exercise repository as follows:-->
+为你在课程中或空闲时间创建的一个<i>你自己的</i>全栈应用创建一个类似的容器化开发环境。你应该在你项目仓库中对该应用进行如下结构设计。
 
 ```bash
 └── my-app
@@ -729,8 +729,8 @@ todo-app
 
 <!-- Finish this part by creating a containerized <i>production setup</i> of your own full stack app.-->
  通过创建你自己的全栈应用的容器化<i>生产设置</i>来完成这一部分。
-<!-- Structure the app in your submission repository as follows:-->
- 在你提交的仓库中的应用的结构如下。
+<!-- Structure the app in your exercise repository as follows:-->
+ 在你项目仓库中的应用的结构如下。
 
 ```bash
 └── my-app
@@ -743,28 +743,6 @@ todo-app
     ├── docker-compose.dev.yml
     └── docker-compose.yml
 ```
-### Submitting exercises and getting the credits
-
-<!-- This was the last exercise in this section. It's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fs-containers).-->
- 这是本章节的最后一个练习。现在是时候将你的代码推送到GitHub，并将你所有完成的练习标记到[练习提交系统](https://studies.cs.helsinki.fi/stats/courses/fs-containers)。
-
-<!-- Exercises of this part are submitted just like in the previous parts, but unlike parts 0 to 7, the submission goes to an own [course instance](https://studies.cs.helsinki.fi/stats/courses/fs-containers). Remember that you have to finish <i>all the exercises</i> to pass this part!-->
- 这一部分的练习就像前面几部分一样提交，但与第0到7部分不同的是，提交到一个自己的[课程实例](https://studies.cs.helsinki.fi/stats/courses/fs-containers)。记住，你必须完成<i>所有的练习</i>，才能通过这部分的考试!
-
-<!-- Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
-一旦你完成了练习并想获得学分，请通过练习提交系统让我们知道你已经完成了该课程。
-
-![Submissions](../../images/11/21.png)
-
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
- 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前，必须完成考试。
-
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
- **注意**你需要对相应的课程部分进行注册，以获得注册的学分，更多信息见[这里](/en/part0)。
-
-<!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.-->
- 你可以通过点击其中一个标志图标下载完成这部分的证书。旗帜图标与证书的语言相对应。
-
 </div>
 
 </div>

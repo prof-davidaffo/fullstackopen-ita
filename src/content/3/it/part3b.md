@@ -424,7 +424,7 @@ Il frontend funziona così sia in sviluppo sia in produzione. Dal suo punto di v
 npm remove cors
 ```
 
-L'applicazione completa è ora pubblicata. Separare frontend e backend può essere utile in altre architetture e per realizzare una [pipeline di deployment](https://martinfowler.com/bliki/DeploymentPipeline.html), cioè un processo automatizzato che porta il codice attraverso test e controlli fino alla produzione. L'argomento viene trattato nella [parte 11](/it/part11).
+L'applicazione completa è ora pubblicata. Separare frontend e backend può essere utile in altre architetture e per realizzare una [pipeline di deployment](https://martinfowler.com/bliki/DeploymentPipeline.html), cioè un processo automatizzato che porta il codice attraverso test e controlli fino alla produzione. L'argomento viene trattato nella [parte 11](/en/part11).
 
 Il backend di riferimento è nel branch <i>part3-3</i> su [GitHub](https://github.com/fullstack-hy2020/part3-notes-backend/tree/part3-3); le modifiche al frontend sono nel branch <i>part3-1</i> del [relativo repository](https://github.com/fullstack-hy2020/part2-notes-frontend/tree/part3-1).
 

@@ -168,6 +168,4 @@ Tee sovelluksesi ulkoasusta tyylikkäämpi jotain kurssilla esiteltyä tapaa kä
 
 Jos käytät tyylien lisäämiseen noin tunnin aikaa, merkkaa myös tämä tehtävä tehdyksi.
 
-Tämä oli osan viimeinen tehtävä ja on aika pushata koodi GitHubiin sekä merkata tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

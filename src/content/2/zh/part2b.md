@@ -451,9 +451,6 @@ show {showAll ? 'important' : 'all'}
 <!-- <h3>Exercises 2.6.-2.10.</h3> -->
 <h3>练习 2.6.~2.10.</h3>
 
-<!-- In the first exercise, we will start working on an application that will be further developed in the later exercises. In related sets of exercises it is sufficient to return the final version of your application. You may also make a separate commit after you have finished each part of the exercise set, but doing so is not required.-->
-在第一道练习中，我们将开始一个将在后面的练习中进一步开发的应用。在相关的练习集中，只要上交你应用的最终版本即可。你也可以在完成练习集的每一部分后就在git中提交一次，但不强求。
-
 <!-- <h4>2.6: The Phonebook Step1</h4> -->
 <h4>2.6：电话簿 第1步</h4>
 

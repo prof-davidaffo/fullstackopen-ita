@@ -40,8 +40,8 @@ lang: zh
 
 ### About this part ###
 
-<!-- In this part, the focus of our attention will not be on the JavaScript code. Instead, we are interested in the configuration of the environment in which the software is executed. As a result, the exercises may not contain any coding, the applications are available to you through GitHub and your tasks will include configuring them. The exercises are to be submitted to <i>a single GitHub repository</i> which will include all of the source code and configuration you do during this part.-->
- 在这一部分，我们关注的重点将不是JavaScript代码。相反，我们对执行软件的环境配置感兴趣。因此，练习可能不包含任何编码，应用可以通过GitHub提供给你，你的任务将包括配置它们。练习将被提交到<i>一个GitHub仓库</i>，其中将包括你在这部分所做的所有源代码和配置。
+<!-- In this part, the focus of our attention will not be on the JavaScript code. Instead, we are interested in the configuration of the environment in which the software is executed. As a result, the exercises may not contain any coding, the applications are available to you through GitHub and your tasks will include configuring them.-->
+ 在这一部分，我们关注的重点将不是JavaScript代码。相反，我们对执行软件的环境配置感兴趣。因此，练习可能不包含任何编码，应用可以通过GitHub提供给你，你的任务将包括配置它们。
 
 <!-- You will need basic knowledge of Node, Express, and React. Only the core parts, 1 through 5, are required to be completed before this part.-->
  你将需要Node、Express和React的基本知识。只有核心部分，即1到5，需要在这部分之前完成。
@@ -64,30 +64,14 @@ lang: zh
 <!-- Step 1: Read the text below the Warning header.-->
  第一步：阅读警告标题下的文字。
 
-<!-- Step 2: Download this [repository](https://github.com/fullstack-hy2020/part12-containers-applications) and make it your submission repository for this part.-->
- 第2步：下载这个[仓库](https://github.com/fullstack-hy2020/part12-containers-applications)，并把它作为你在这部分的提交仓库。
+<!-- Step 2: Download this [repository](https://github.com/fullstack-hy2020/part12-containers-applications) as the starting point for the exercises.-->
+ 第2步：下载这个[仓库](https://github.com/fullstack-hy2020/part12-containers-applications)，作为练习的起点。
 
 <!-- Step 3: Run <i>curl http://helsinki.fi</i> and save the output into a file. Save that file into your repository as file <i>script-answers/exercise12_1.txt</i>. The directory <i>script-answers</i> was created in the previous step.-->
  第三步：运行<i>curl http://helsinki.fi</i>，并将输出保存到一个文件中。将该文件保存到你的仓库中，作为文件<i>script-answers/exercise12_1.txt</i>。目录<i>script-answers</i>已在上一步中创建。
 
 </div>
 <div class="content">
-
-### Submitting exercises and earning credits ###
-
-<!-- Submit the exercises via the [submissions system](https://studies.cs.helsinki.fi/stats/) just like in the previous parts. Exercises in this part are submitted <i>to its [own course instance](https://studies.cs.helsinki.fi/stats/courses/fs-containers)</i>.-->
- 通过[提交系统](https://studies.cs.helsinki.fi/stats/)提交练习，就像在前面的部分一样。这一部分的练习被提交<i>到其[自己的课程实例](https://studies.cs.helsinki.fi/stats/courses/fs-containers)</i>。
-
-<!-- Completing this part on containers will get you 1 credit. Note that you need to do all the exercises for earning the credit or the certificate.-->
- 在集装箱上完成这部分内容将得到1个学分。注意，你需要做所有的练习来获得学分或证书。
-
-<!-- Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
-一旦你完成了练习并想获得学分，请通过练习提交系统让我们知道你已经完成了该课程。
-
-![Submitting exercises for credits](../../images/10/23.png)
-
-<!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the language of the certificate.-->
- 你可以通过点击其中一个旗帜图标下载完成这部分的证书。旗帜图标与证书的语言相对应。
 
 ### Tools of the trade
 

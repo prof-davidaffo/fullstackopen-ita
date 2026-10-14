@@ -195,6 +195,5 @@ Extend your application so that users can add comments to blog posts from the fr
 
 Improve the visual appearance of the new features of your application using the techniques covered in [part 5](/en/part5/react_router_ui_frameworks). 
  
-This was the last exercise for this part of the course and it's time to push your code to GitHub and mark all of your completed exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

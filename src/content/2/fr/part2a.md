@@ -570,19 +570,9 @@ J'ai ajouté ce chapitre au cours après que le modèle de réponse à la questi
 
 <h3>Exercices 2.1.-2.5.</h3>
 
-Les exercices sont soumis via GitHub, et en marquant les exercices comme effectués dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Vous pouvez soumettre tous les exercices dans le même référentiel ou utiliser plusieurs référentiels différents. Si vous soumettez des exercices de différentes parties dans le même référentiel, nommez bien vos répertoires.
-
-Les exercices sont soumis **Une partie à la fois**. Lorsque vous avez soumis les exercices d'une partie, vous ne pouvez plus soumettre d'exercices manqués pour cette partie.
-
-Notez que cette partie contient plus d'exercices que les précédentes, donc <i>ne soumettez pas</i> avant d'avoir fait tous les exercices de cette partie que vous souhaitez soumettre.
-
-**ATTENTION** create-react-app transforme automatiquement le projet en un référentiel git, si le projet n'est pas créé à l'intérieur d'un référentiel déjà existant. Vous **ne voulez probablement pas** que le projet devienne un référentiel, alors exécutez la commande _rm -rf .git_ depuis sa racine.
-
 <h4>2.1: courseinfo étape6</h4>
 
-Terminons le code pour le rendu du contenu du cours des exercices 1.1 à 1.5. Vous pouvez commencer le code avec le modèle de réponse. Ces modèles pour la partie 1 peuvent être trouvés en allant sur le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen), cliquez sur <i>mes soumissions</i> en haut, et dans la ligne correspondant à la partie 1 sous la colonne <i>solutions</i> cliquez sur <i>afficher</i>. Pour voir la solution de l'exercice <i>informations sur le cours</i>, cliquez sur _index.js_ sous <i>kurssitiedot</i> ("kurssitiedot" signifie "informations sur le cours").
+Poursuivez le développement de l’application courseinfo des exercices 1.1–1.5.
 
 **Notez que si vous copiez un projet d'un endroit à un autre, vous devrez peut-être supprimer le répertoire <i>node\_modules</i> et réinstaller les dépendances avec la commande _npm install_ avant de pouvoir démarrer l'application.**
 Généralement, il n'est pas recommandé de copier tout le contenu d'un projet et/ou d'ajouter le répertoire <i>node\_modules</i> au système de contrôle de version.

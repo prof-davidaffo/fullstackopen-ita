@@ -9,8 +9,6 @@ lang: es
 
 En esta sección exploraremos las aplicaciones de Node que usan bases de datos relacionales. Durante la sección construiremos un backend en Node utilizando una base de datos relacional para una aplicación de notas familiar de las secciones 3-5. Para completar esta parte, se necesitará un conocimiento razonable de bases de datos relacionales y SQL. Hay muchos cursos en línea sobre bases de datos SQL, por ejemplo. [SQLbolt](https://sqlbolt.com/) y [Introducción a SQL por Khan Academy](https://www.khanacademy.org/computing/computer-programming/sql).
 
-Hay 24 ejercicios en esta parte, y se debe completar cada ejercicio para completar el curso. Los ejercicios se envían a través del [sistema de envíos](https://studies.cs.helsinki.fi/stats/courses/fs-psql) al igual que en las partes anteriores, pero a diferencia de las partes 0 a 7, el envío va a su propia "instancia de curso".
-
 ### Ventajas y desventajas de las bases de datos de documentos.
 
 En las secciones anteriores del curso, hemos utilizado la base de datos MongoDB. Mongo es una [base de datos de documentos](https://en.wikipedia.org/wiki/Document-oriented_database) y una de sus características más importante es que <i>no posee esquema</i>, es decir, la base de datos tiene solo un conocimiento muy limitado de qué tipo de datos se almacenan en sus colecciones. El esquema de la base de datos existe solo en el código del programa, que interpreta los datos de una manera específica, por ejemplo, al identificar que algunos de los campos son referencias a objetos en otra colección.

@@ -531,6 +531,4 @@ Après l'ajout de l'authentification basée sur les jetons, les tests pour l'ajo
 
 [Ceci](https://github.com/visionmedia/supertest/issues/398) pourrait être très utile pour effectuer la correction.
 
-C'est le dernier exercice de cette partie du cours et il est temps de pousser votre code sur GitHub et de marquer tous vos exercices terminés dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen) des exercices.
-
 </div>

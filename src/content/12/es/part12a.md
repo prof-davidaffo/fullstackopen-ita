@@ -9,7 +9,6 @@ lang: es
 
 Esta parte fue actualizada el 21 de Marzo de 2024: Create react app reemplazado con Vite en el frontend de todo.
 
-Si comenzaste esta parte antes de la actualización, puedes ver el viejo material [aquí](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io/tree/4015af9dddb61cb01f013456d8728e8f553be347/src/content/12). Hay algunos cambios en las configuraciones del frontend.
 </div>
 
 <div class="content">
@@ -38,7 +37,7 @@ Alguna vez podrás escuchar sobre el problema <i>"Works in my container"</i> (Fu
 
 ### Sobre esta parte ###
 
-En esta parte, el foco de nuestra atención no estará en el código JavaScript. En cambio, nos interesa la configuración del entorno en el que se ejecuta el software. Como resultado, es posible que los ejercicios no contengan nada de código, las aplicaciones están disponibles a través de GitHub y sus tareas incluirán configurarlas. Los ejercicios deben enviarse a <i>un solo repositorio de GitHub</i> que incluirá todo el código fuente y las configuraciones que realizes durante esta parte.
+En esta parte, el foco de nuestra atención no estará en el código JavaScript. En cambio, nos interesa la configuración del entorno en el que se ejecuta el software. Como resultado, es posible que los ejercicios no contengan nada de código, las aplicaciones están disponibles a través de GitHub y sus tareas incluirán configurarlas.
 
 Necesitarás conocimientos básicos de Node, Express y React. Solo las partes principales, 1 a 5, deben ser completadas antes de esta parte.
 
@@ -57,24 +56,12 @@ Si solo has utilizado una interfaz gráfica de usuario y nunca has tocado, por e
 
 Paso 1: Lee el texto debajo del titulo "Advertencia".
 
-Paso 2: Descarga este [repositorio](https://github.com/fullstack-hy2020/part12-containers-applications) y conviértelo en tu repositorio de envío para esta parte del curso.
+Paso 2: Descarga este [repositorio](https://github.com/fullstack-hy2020/part12-containers-applications) para usarlo como base de los ejercicios.
 
 Paso 3: Ejecuta <i>curl http://helsinki.fi</i> y guarda el resultado en un archivo. Guarda el archivo en tu repositorio con el nombre <i>script-answers/exercise12_1.txt</i>. El directorio <i>script-answers</i> ha sido creado en el paso anterior.
 
 </div>
 <div class="content">
-
-### Enviar los ejercicios y recibir los créditos ###
-
-Envía los ejercicios utilizando el [sistema de envío](https://studies.cs.helsinki.fi/stats/) igual que en las partes anteriores. Los ejercicios de esta parte son enviados <i>a su [propia instancia del curso](https://studies.cs.helsinki.fi/stats/courses/fs-containers)</i>.
-
-Completar esta parte supondrá la obtención de 1 crédito. Ten en cuenta que debes realizar todos los ejercicios para obtener el crédito o el certificado.
-
-Cuando completes los ejercicios y desees obtener los créditos, déjanoslo saber a través del sistema de envío de ejercicios que has completado el curso:
-
-![Enviando los ejercicios para obtener los créditos](../../images/10/23.png)
-
-Puedes descargar el certificado de finalización de esta parte dando click en uno de los íconos de las banderas. Cada bandera corresponde con el idioma del certificado.
 
 ### Herramientas del oficio
 

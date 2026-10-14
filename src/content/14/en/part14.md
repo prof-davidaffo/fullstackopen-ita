@@ -6,6 +6,6 @@ lang: en
 
 <div class="intro">
 
-Material of this part is found in <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-nextjs">https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-nextjs</a>
+Next.js material is not yet available in this handbook.
 
 </div>

@@ -49,7 +49,7 @@ module.exports = {
     11: {},
     12: {},
     13: {},
-    14: {}
+    14: {},
   },
   en: {
     0: {
@@ -100,13 +100,36 @@ module.exports = {
       c: 'Miscellaneous',
       d: 'Exercises: extending the bloglist',
     },
-    8: {},
-    9: {},
-    10: {},
-    11: {},
+    8: {
+      a: 'GraphQL server',
+      b: 'React and GraphQL',
+      c: 'Database and user administration',
+      d: 'Login and updating the cache',
+      e: 'Fragments and subscriptions',
+    },
+    9: {
+      a: 'Background and introduction',
+      b: 'First steps with TypeScript',
+      c: 'Typing an Express app',
+      d: 'React with types',
+      e: 'Grande finale: Patientor',
+    },
+    10: {
+      a: 'Introduction to React Native',
+      b: 'React Native basics',
+      c: 'Communicating with server',
+      d: 'Testing and extending our application',
+    },
+    11: {
+      a: 'Introduction to CI/CD',
+      b: 'Getting started with GitHub Actions',
+      c: 'Deployment',
+      d: 'Keeping green',
+      e: 'Expanding further',
+    },
     12: {},
     13: {},
-    14: {}    
+    14: {},
   },
   it: {
     0: {

@@ -640,6 +640,4 @@ REACT_APP_API_KEY=t0p53cr3t4p1k3yv4lu3
 
 Observe que você precisará reiniciar o servidor para aplicar as alterações.
 
-Este foi o último exercício para esta parte do curso, e é hora de enviar seu código para o GitHub e marcar todos os seus exercícios concluídos na guia "my submissions" do [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

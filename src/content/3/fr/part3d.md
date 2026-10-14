@@ -399,6 +399,4 @@ Vous pouvez trouver le code de notre application actuelle dans son intégralité
 
 Ajoutez ESlint à votre application et corrigez tous les avertissements.
 
-C'était le dernier exercice de cette partie du cours. Il est temps de pousser votre code sur GitHub et de marquer tous vos exercices terminés sur le [système de soumission des exercices](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

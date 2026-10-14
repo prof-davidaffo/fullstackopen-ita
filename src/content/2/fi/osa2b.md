@@ -402,8 +402,6 @@ Sovelluksen tämänhetkinen koodi on kokonaisuudessaan [GitHubissa](https://gith
 
 <h3>Tehtävät 2.6.-2.10.</h3>
 
-<i>Seuraavassa tehtävässä aloitettavaa ohjelmaa kehitellään eteenpäin muutamassa seuraavassa tehtävässä. Tässä ja kurssin aikana muissakin vastaantulevissa tehtäväsarjoissa ohjelman lopullisen version palauttaminen riittää, voit toki halutessasi tehdä commitin jokaisen tehtävän jälkeisestä tilanteesta, mutta se ei ole välttämätöntä.</i>
-
 <h4>2.6: puhelinluettelo step1</h4>
 
 Toteutetaan yksinkertainen puhelinluettelo. <i>**Aluksi luetteloon lisätään vain nimiä.**</i>

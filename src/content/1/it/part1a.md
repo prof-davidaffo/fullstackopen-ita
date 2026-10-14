@@ -621,13 +621,7 @@ part2
 
 Ogni parte del corso ha una propria cartella, suddivisa a sua volta nelle cartelle delle diverse serie di esercizi, come <i>unicafe</i> nella parte 1.
 
-La maggior parte degli esercizi sviluppa gradualmente un'applicazione più grande: in questa parte, per esempio, <i>courseinfo</i>, <i>unicafe</i> e <i>anecdotes</i>. È sufficiente consegnare l'applicazione completa. Puoi creare un commit dopo ogni esercizio, ma non è obbligatorio. L'applicazione <i>courseinfo</i>, per esempio, viene costruita negli esercizi 1.1-1.5: basta consegnare il risultato finale ottenuto dopo l'esercizio 1.5.
-
-Per ogni applicazione si consiglia di consegnare tutti i relativi file, tranne la cartella <i>node_modules</i>.
-
   <h4>1.1: Informazioni sui corsi, passo 1</h4>
-
-<i>L'applicazione su cui inizieremo a lavorare verrà sviluppata ulteriormente nei prossimi esercizi. In questa e nelle altre serie è sufficiente consegnare lo stato finale dell'applicazione. Se vuoi, puoi creare un commit per ciascun esercizio, ma è del tutto facoltativo.</i>
 
 Usa Vite per inizializzare una nuova applicazione. Modifica <i>main.jsx</i> nel modo seguente:
 

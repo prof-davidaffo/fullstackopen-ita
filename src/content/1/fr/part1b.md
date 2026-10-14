@@ -248,8 +248,6 @@ Pendant ce cours, nous définirons toutes les fonctions en utilisant la syntaxe 
 <div class="tasks">
   <h3>Exercices 1.3.-1.5.</h3>
 
-<i>Nous continuons à créer l'application sur laquelle nous avons commencé à travailler dans les exercices précédents. Vous pouvez écrire le code dans le même projet, car nous ne sommes intéressés que par l'état final de l'application soumise.</i>
-
 **Conseil de pro :** vous pouvez rencontrer des problèmes en ce qui concerne la structure des <i>props</i> que les composants reçoivent. Un bon moyen de rendre les choses plus claires est d'afficher les props sur la console, par ex. comme suit:
 
 ```js

@@ -9,7 +9,6 @@ lang: es
 
 Esta parte fue actualizada el 21 de Marzo de 2024: Create react app reemplazado con Vite en el frontend de todo.
 
-Si comenzaste esta parte antes de la actualización, puedes ver el viejo material [aquí](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io/tree/4015af9dddb61cb01f013456d8728e8f553be347/src/content/12). Hay algunos cambios en las configuraciones del frontend.
 </div>
 
 <div class="content">
@@ -739,7 +738,7 @@ todo-app
 
 #### Ejercicio 12.21:
 
-Crea un entorno de desarrollo en contenedores similar para una de tus <i>propias</i> aplicaciones, puedes usar las que hayas creado durante el curso o en tu tiempo libre. Debes estructurar la aplicación en tu repositorio de envío de la siguiente manera:
+Crea un entorno de desarrollo en contenedores similar para una de tus <i>propias</i> aplicaciones, puedes usar las que hayas creado durante el curso o en tu tiempo libre. Debes estructurar la aplicación en tu repositorio del proyecto de la siguiente manera:
 
 ```bash
 └── my-app
@@ -754,7 +753,7 @@ Crea un entorno de desarrollo en contenedores similar para una de tus <i>propias
 #### Ejercicio 12.22:
 
 Termina esta parte creando una <i>configuración de producción</i> en contenedores de tu propia aplicación.
-Estructura la aplicación en tu repositorio de envío de la siguiente manera:
+Estructura la aplicación en tu repositorio del proyecto de la siguiente manera:
 
 ```bash
 └── my-app
@@ -769,20 +768,6 @@ Estructura la aplicación en tu repositorio de envío de la siguiente manera:
     ├── docker-compose.dev.yml
     └── docker-compose.yml
 ```
-
-### Envío de ejercicios y obtención de créditos.
-
-Este fue el último ejercicio de esta sección. Es hora de enviar tu código a GitHub y marcar todos sus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fs-containers).
-
-Los ejercicios de esta parte se envían al igual que en las partes anteriores, pero a diferencia de las partes 0 a 7, la presentación va a una [instancia propia del curso](https://studies.cs.helsinki.fi/stats/courses/fs-containers). ¡Recuerda que tienes que terminar <i>todos los ejercicios</i> para aprobar esta parte!
-
-Una vez que hayas completado los ejercicios y quieras obtener los créditos, infórmanos a través del sistema de envío de ejercicios que has completado el curso:
-
-![Submissions](../../images/11/21.png)
-
-**Ten en cuenta** que necesitas registrarte en la parte del curso correspondiente para obtener los créditos registrados, consulta [aquí](/es/part0) para obtener más información.
-
-Puedes descargar el certificado por completar esta parte haciendo clic en uno de los íconos de bandera. El ícono de la bandera corresponde al idioma del certificado.
 
 </div>
 

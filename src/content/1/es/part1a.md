@@ -616,38 +616,7 @@ En esta parte, ni siquiera vale la pena intentar utilizar la renderización dire
 <div class="tasks"> 
   <h3>Ejercicios 1.1.-1.2.</h3> 
 
-Los ejercicios se envían a través de GitHub y marcando los ejercicios completados en el [sistema de envío ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen). 
-
-Los ejercicios se envían **una parte a la vez**. Cuando hayas enviado los ejercicios para una parte del curso, ya no podrás enviar ejercicios incompletos para la misma parte.
-
-Ten en cuenta que en esta parte hay [más ejercicios](/es/part1/un_estado_mas_complejo_depurando_aplicaciones_react#exercises-1-6-1-14) además de los que se encuentran a continuación. <i>No envíes tu trabajo</i> hasta que hayas completado todos los ejercicios que deseas enviar para la parte.
-
-Puedes enviar todos los ejercicios de este curso al mismo repositorio o utilizar varios repositorios. Si envías ejercicios de diferentes partes en el mismo repositorio, utiliza un esquema de nomenclatura razonable para los directorios.
-
-Una estructura de archivos muy funcional para el repositorio de envíos es la siguiente:
-
-```text
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  phonebook
-  countries
-```
-
-Mira este [repositorio de ejemplo para el envío de ejercicios](https://github.com/fullstack-hy2020/example-submission-repository)! 
-
-Para cada parte del curso hay un directorio, que se ramifica en directorios que contienen una serie de ejercicios, como "unicafe" para la parte 1.
-
-La mayoría de los ejercicios del curso construyen una aplicación más grande, por ejemplo: courseinfo, unicafe y anecdotes en esta parte, poco a poco. Es suficiente con enviar la aplicación terminada. Puedes hacer un commit después de cada ejercicio, pero no es obligatorio. Por ejemplo, la aplicación de información del curso se construye en los ejercicios 1.1.-1.5. En este caso solo necesitas enviar el resultado final del ejercicio 1.5.
-
-Por cada aplicación web para una serie de ejercicios, se recomienda enviar todos los archivos relacionados con esa aplicación, excepto para el directorio <i>node\_modules</i>.
-
   <h4>1.1: Información del Curso, paso 1</h4> 
-
-<i>La aplicación en la que comenzaremos a trabajar en este ejercicio se continuara desarrollando en algunos de los siguientes ejercicios. En este y otros conjuntos de ejercicios futuros de este curso, es suficiente enviar solo el estado final de la aplicación. Si lo deseas, también puedes crear un commit para cada ejercicio de la serie, pero esto es completamente opcional.</i>
 
 Usa Vite para inicializar una nueva aplicación. Modifica <i>main.jsx</i> para que coincida con lo siguiente
 

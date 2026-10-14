@@ -1312,7 +1312,4 @@ cy.get('.blog').eq(1).should('contain', 'The title with the second most likes')
 <!-- Note that you might end up having problems if you click a like button many times in row. It might be that cypress does the clicking so fast that it does not have time to update the app state in between the clicks. One remedy for this is to wait for the number of likes to update in between all clicks.-->
  注意，如果你连续多次点击一个喜欢的按钮，你可能最终会遇到问题。这可能是因为Cypress的点击速度太快了，以至于它没有时间在点击之间更新应用的状态。对此的一个补救措施是，在所有点击之间等待喜欢的数量更新。
 
-<!-- This was the last exercise of this part, and it's time to push your code to github and mark the exercises you completed in the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
- 这是本章节的最后一个练习，是时候将你的代码推送到github，并在[练习提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记你完成的练习。
-
 </div>

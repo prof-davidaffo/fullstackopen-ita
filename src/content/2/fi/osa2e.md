@@ -641,6 +641,4 @@ Huomaa, että ympäristömuuttujan nimen täytyy alkaa merkkijonolla <i>VITE_</i
 
 Muista myös, että jos teet muutoksia ympäristömuuttujiin, sinun on käynnistettävä kehityspalvelin uudelleen, jotta muutokset tulevat voimaan.
 
-Tämä oli osan viimeinen tehtävä ja on aika sekä puskea koodi GitHubiin että merkitä tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

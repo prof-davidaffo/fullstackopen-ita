@@ -670,26 +670,10 @@ const Course = (props) => { // highlight-line
 
 <div class="tasks">
 
-<!-- <h3>Exercises 2.1.-2.5.</h3> -->
 <h3>练习 2.1~2.5.</h3>
-
-<!-- The exercises are submitted via GitHub, and by marking the exercises as done in the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
-练习通过GitHub上交，并在[上交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记已完成的练习。
-
-<!-- You can submit all of the exercises into the same repository, or use multiple different repositories. If you submit exercises from different parts into the same repository, name your directories well.-->
-你可以将本课程的所有练习上交到同一个仓库，也可以使用多个仓库。如果你将不同章节的练习上交到同一个仓库，命名好你的目录。
-
-<!-- The exercises are submitted **One part at a time**. When you have submitted the exercises for a part, you can no longer submit any missed exercises for that part.-->
-练习是**一次上交一个章节**的。当你上交了一个章节的练习，你就不能再上交该章节任何遗漏的练习了。
-
-<!-- Note that this part has more exercises than the ones before, so <i>do not submit</i> before you have done all exercises from this part you want to submit.-->
-注意这一章节的练习比之前的要多，所以在你做完这一章节你想上交的所有练习之前，<i>不要上交</i>练习。
-
-<!-- <h4>2.1: Course information step 6</h4> -->
 <h4>2.1：课程信息 第6步</h4>
 
-<!-- Let's finish the code for rendering course contents from exercises 1.1 - 1.5. You can start with the code from the model answers. The model answers for part 1 can be found by going to the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen), clicking on <i>my submissions</i> at the top, and in the row corresponding to part 1 under the <i>solutions</i> column clicking on <i>show</i>. To see the solution to the <i>course info</i> exercise, click on _App.jsx_ under <i>courseinfo</i>. -->
-让我们完成练习1.1~1.5中渲染课程内容的代码。你可以从标准答案的代码开始。第1章节的标准答案可以在[上交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中找到，点击顶部的<i>my submissions</i>，在<i>solutions</i>栏下对应第1章节的行中点击<i>show</i>。要看<i>课程信息</i>练习的解决方案，请点击<i>courseinfo</i>下的_App.jsx_。
+继续开发练习1.1–1.5中的courseinfo应用。
 
 <!-- **Note that if you copy a project from one place to another, you might have to delete the <i>node\_modules</i> directory and install the dependencies again with the command _npm install_ before you can start the application.**-->
 **注意，如果你把一个项目从一个地方复制到另一个地方，你可能要删除<i>node\_modules</i>目录，并在启动应用之前用_npm install_命令重新安装依赖。**

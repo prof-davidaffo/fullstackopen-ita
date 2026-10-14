@@ -1633,18 +1633,4 @@ npx sequelize-cli model:generate --name User --attributes name:string,username:s
 <!-- Make the database changes required for this task using migrations.-->
  使用迁移来进行这项任务所需的数据库修改。
 
-### Submitting exercises and getting the credits
-
-<!-- Exercises of this part are submitted just like in the previous parts, but unlike parts 0 to 7, the submission goes to an own [course instance](https://studies.cs.helsinki.fi/stats/courses/fs-psql). Remember that you have to finish all the exercises to pass this part!-->
- 这一部分的练习就像前几部分一样提交，但与0到7部分不同的是，提交到一个自己的[课程实例](https://studies.cs.helsinki.fi/stats/courses/fs-psql)。请记住，你必须完成所有的练习才能通过这部分!
-
-<!-- Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
-一旦你完成了练习并想获得学分，请通过练习提交系统告诉我们你已经完成了课程。
-
-![Submissions](../../images/11/21.png)
-
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
- 注意 "在Moodle中完成考试 "的说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
-
-
 </div>

@@ -573,7 +573,4 @@ export default [
 <!-- Add ESlint to your application and fix all the warnings. -->
 将 ESlint 添加到你的应用程序中，并修复所有警告。
 
-<!-- This was the last exercise of this part of the course. It's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen). -->
-这是课程这一章节的最后一道练习。现在是时候将你的代码推送到 GitHub，并在[练习上交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记你完成的所有练习了。
-
 </div>

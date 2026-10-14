@@ -461,30 +461,9 @@ Custom hookeihin taas liittyy joukko sääntöjä, esimerkiksi niiden nimeämise
 
 <div class="tasks">
 
+### Tehtävien projektit
 
-### Tehtävärepositorio
-
-Toisin kuin aiemmissa osissa, tulee tämän osan tehtävät palauttaa omaan repositorioonsa.
-
-Luo siis nyt uusi repositorio, johon kopioit repositorion https://github.com/fullstack-hy2020/fs-statemanagement sisällön.
-
-Kaiken repositorion sisällön (paitsi .git-hakemiston) tulee olla kopioituna palautusrepositoriosi juurihakemistoon. Palautusrepositoriosi juuren sisällön tulee siis olla täsmälleen seuraava:
-
-```bash
-.git 
-.github
-.gitignore
-unicafe
-unicafe-tests
-anecdotes
-anecdotes-tests
-query-anecdotes
-query-anecdotes-tests
-```
-
-Myös kaikille tämän osan tehtävissä kehitettäville sovelluksille on olemassa automatisoidut testit.
-
-**From 21st September it is mandatory to have passing tests for submissions**
+Käytä pohjana repositorion https://github.com/fullstack-hy2020/fs-statemanagement projekteja. Repositorio sisältää myös paikallisesti ajettavat automaattiset testit.
 
 ### Tehtävä 1
 
@@ -824,7 +803,7 @@ Sovelluksen tämänhetkinen koodi on kokonaisuudessaan [GitHubissa](https://gith
 
 Toteutetaan uusi versio ensimmäisen osan anekdoottien äänestyssovelluksesta. 
 
-Ota ratkaisusi pohjaksi palautusrepositorion hakemistossa *anecdotes* oleva projekti.
+Ota ratkaisusi pohjaksi harjoitusrepositorion hakemistossa *anecdotes* oleva projekti.
 
 #### 6.2: anekdootit, step1
 

@@ -445,16 +445,4 @@ Tu formulario mejorado podría verse de esta manera:
 
 Los códigos de diagnóstico ahora se configuran con el elemento de Material UI [multiple select](https://mui.com/material-ui/react-select/#multiple-select) y las fechas con el elemento [Input](https://mui.com/material-ui/api/input/) con el tipo [date](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date).
 
-### Envío de ejercicios y obtención de créditos
-
-Los ejercicios de esta parte son enviados a través de [el sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fs-typescript) al igual que en las partes anteriores, con la diferencia de que esta vez el envío se realiza en una "instancia del curso" diferente. ¡Recuerda que tienes que terminar al menos 24 ejercicios para aprobar esta parte!
-
-Una vez que hayas completado los ejercicios y quieras obtener los créditos, háznoslo saber a través de el sistema de envío de ejercicios que has completado el curso:
-
-![Submissions](../../images/11/21.png)
-
-**Ten en cuenta** que necesitas registrarte a la parte del curso correspondiente para obtener los créditos registrados, lee [esto](/es/part0) para más información.
-
-Puedes descargar el certificado por completar esta parte clicando en uno de los iconos de las banderas. El icono de la bandera se corresponde con el lenguaje del certificado.
-
 </div>

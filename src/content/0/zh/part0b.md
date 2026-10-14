@@ -766,45 +766,13 @@ var sendToServer = function(note) {
 </div>
 
 <div class="tasks">
-<!--   <h3>Exercises 0.1.-0.6.</h3>-->
- <h3>练习0.1.-0.6.</h3>
-
-<!-- The exercises are submitted via GitHub, and by marking the exercises as done in the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
- 练习通过GitHub提交，并在[提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记练习完成。
-
-<!-- You can submit all of the exercises into the same repository, or use multiple different repositories. If you submit exercises from different parts into the same repository, name your directories well. If you use a private repository to submit the exercises, add _mluukkai_ as a collaborator to it.-->
-你可以将所有的练习提交到同一个仓库，或者使用多个不同的仓库。如果你将不同部分的练习提交到同一个仓库中，请将你的目录命名好。如果你使用一个私人仓库来提交练习，把_mluukkai_作为合作者加入其中。
-
-<!-- One good way to name the directories in your submission repository is as follows:-->
-在你的提交仓库中命名目录的一个好方法如下：
-
-```
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  courseinfo
-  phonebook
-  countries
-```
-
-<!-- So, each part has its own directory, which contains a directory for each exercise set (like the unicafe exercises in part 1).-->
- 也就是，每个章节都有自己的目录，其中包含每个练习集的目录（如第一章节的unicafe练习）。
-
-<!-- The exercises are submitted **one part at a time**. When you have submitted the exercises for a part, you can no longer submit any missed exercises for that part.-->
- 练习是**一次提交一个章节的**。当你提交了一个章节的练习，你就不能再提交该章节任何遗漏的练习。
-
-<!--   <h4>0.1: HTML</h4>-->
+<h3>练习0.1.-0.6.</h3>
 <h4>0.1: HTML</h4>
 
 <!-- Review the basics of HTML by reading this tutorial from Mozilla: [HTML tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).-->
 通过阅读Mozilla的这个教程来复习HTML的基础知识：[HTML教程](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)。
 
-<!-- This exercise is not submitted to GitHub, it's enough to just read the tutorial -->
-
-这个练习不用提交GitHub，仅仅阅读教程即可。
+阅读教程即可。
 
 <!--   <h4>0.2: CSS</h4>-->
  <h4>0.2: CSS</h4> 
@@ -812,9 +780,7 @@ part2
 <!-- Review the basics of CSS by reading this tutorial from Mozilla: [CSS tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).-->
  通过阅读Mozilla的这个教程来复习CSS的基础知识：[CSS教程](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)。
 
-<!-- This exercise is not submitted to GitHub, it's enough to just read the tutorial -->
-
-这个练习不用提交GitHub，仅仅阅读教程即可。
+阅读教程即可。
 
 <!--   <h4>0.3: HTML forms</h4>-->
 
@@ -823,9 +789,7 @@ part2
 <!-- Learn about the basics of HTML forms by reading Mozilla's tutorial [Your first form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form).-->
  通过阅读Mozilla的教程[你的第一个表单](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)来了解HTML表单的基础知识。
 
-<!-- This exercise is not submitted to GitHub, it's enough to just read the tutorial -->
-
-这个练习不用提交GitHub，仅仅阅读教程即可。
+阅读教程即可。
 
 <!--   <h4>0.4: New note</h4>-->
 
@@ -884,8 +848,5 @@ end note
 
 <!-- Create a diagram depicting the situation where the user creates a new note using the single page version of the app.-->
  创建一个图表，描述用户使用单页版应用创建新笔记的情况。
-
-<!-- This was the last exercise, and it's time to push your answers to GitHub and mark the exercises as done in the [submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
-这是最后一个练习，是时候把你的答案推送到GitHub，并在[提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记练习完成。
 
 </div>

@@ -608,42 +608,23 @@ JavaScript-väsymys tulee varmasti iskemään myös tällä kurssilla. Onneksi n
 <div class="tasks"> 
   <h3>Tehtäviä</h3>
 
-Tehtävät palautetaan GitHubin kautta ja merkitsemällä tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Voit palauttaa kurssin kaikki tehtävät samaan repositorioon tai käyttää useita repositorioita. Jos palautat eri osien tehtäviä samaan repositorioon, käytä järkevää hakemistojen nimentää. Jos käytät yksityistä (private) repositoriota tehtävien palautukseen, liitä repositoriolle collaboratoriksi <i>mluukkai</i>
-
-Eräs varsin toimiva hakemistorakenne palautusrepositoriolle on [tässä esimerkkirepositoriossa käytetty tapa](https://github.com/FullStack-HY/palauitusrepositorio), jossa kutakin osaa kohti on oma hakemistonsa, joka vielä jakautuu tehtäväsarjat (kuten osan 1 unicafe) sisältäviin hakemistoihin:
-
-```
-osa0
-osa1
-  kurssitiedot
-  unicafe
-  anekdootit
-osa2
-  puhelinluettelo
-  maiden_tiedot
-```
-
-Tehtävät palautetaan **yksi osa kerrallaan**. Kun olet palauttanut osan tehtävät, et voi enää palauttaa saman osan tekemättä jättämiäsi tehtäviä.
-
   <h4>0.1: HTML</h4>
 
 Kertaa HTML:n perusteet lukemalla Mozillan tutoriaali [HTML:stä](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
-<i>Tätä tehtävää ei palauteta GitHubiin. Riittää, että luet tutoriaalin.</i>
+<i>Lue tutoriaali.</i>
 
   <h4>0.2: CSS</h4>
 
 Kertaa CSS:n perusteet lukemalla Mozillan tutoriaali [CSS:stä](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
-<i>Tätä tehtävää ei palauteta GitHubiin. Riittää, että luet tutoriaalin.</i>
+<i>Lue tutoriaali.</i>
 
   <h4>0.3: HTML:n lomakkeet</h4>
 
 Tutustu HTML:n lomakkeiden perusteisiin lukemalla Mozillan tutoriaali [Your first form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form).
 
-<i>Tätä tehtävää ei palauteta GitHubiin. Riittää, että luet tutoriaalin.</i>
+<i>Lue tutoriaali.</i>
 
   <h4>0.4: uusi muistiinpano</h4>
 
@@ -698,7 +679,5 @@ Tee kaavio tilanteesta, jossa käyttäjä menee selaimella osoitteeseen [/exampl
   <h4>0.6: Uusi muistiinpano</h4>
 
 Tee kaavio tilanteesta, jossa käyttäjä luo uuden muistiinpanon single page ‑versiossa.
-
-Tämä oli osan viimeinen tehtävä, ja on aika pushata vastaukset GitHubiin sekä merkata tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

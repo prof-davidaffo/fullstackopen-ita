@@ -248,8 +248,6 @@ During this course, we will define all functions using the arrow syntax.
 
   <h3>Exercises 1.3.-1.5.</h3>
 
-<i>We continue building the application that we started working on in the previous exercises. You can write the code into the same project since we are only interested in the final state of the submitted application.</i>
-
 **Pro-tip:** you may run into issues when it comes to the structure of the <i>props</i> that components receive. A good way to make things more clear is by printing the props to the console, e.g. as follows:
 
 ```js

@@ -546,7 +546,7 @@ Most React applications need not only a way to temporarily store the served data
 
 Now let's make a new version of the anecdote application that uses the TanStack Query library. 
 
-Use the project in the *query-anecdotes* directory of the submission repository as the base for your solution.
+Use the project in the *query-anecdotes* directory of the exercise repository as the base for your solution.
 
 The project has a ready-installed JSON Server, the operation of which has been slightly modified (Review the server.js file for more details. Make sure you're connecting to the correct PORT). Start the server with npm run server.
 
@@ -594,8 +594,6 @@ Implement voting for anecdotes using again the TanStack Query. The application s
 Extract the TanStack Query details into a custom hook function.
 
 #### Bonus: tests, part1
-
-**From 21st September it is mandatory to have passing tests for submissions**
 
 The exercise repository https://github.com/fullstack-hy2020/fs-statemanagement also contains tests for the app done in previous exercises. 
 
@@ -1033,11 +1031,7 @@ The error condition should be handled in the callback function registered for it
 
 If you haven't done so already, move the notification-related context into its own file <i>NotificationContext.jsx</i>, in the same way as the counter application's context was moved to <i>CounterContext.jsx</i> in the material. Also create a custom hook <i>useNotify</i> that encapsulates the notification logic. Simplify the components that use the notification so that they call the hook directly instead of calling <i>useContext</i> separately.
 
-This was the last exercise for this part of the course and it's time to push your code to GitHub and mark all of your completed exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 #### Bonus: tests, part 2
-
-**From 21st September it is mandatory to have passing tests for submissions**
 
 The exercise repository https://github.com/fullstack-hy2020/fs-statemanagement also contains tests for the previous exercises.
 

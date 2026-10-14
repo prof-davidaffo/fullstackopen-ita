@@ -1109,7 +1109,5 @@ Paranna haluamallasi tavalla yksittäisen blogin näyttävän komponentin ulkon�
 
 ![](../../images/5/l14.png)
 
-Tämä oli osan viimeinen tehtävä ja on aika pushata koodi GitHubiin sekä merkata tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>
 

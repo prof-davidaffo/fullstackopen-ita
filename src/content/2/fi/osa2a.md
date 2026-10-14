@@ -568,15 +568,9 @@ Ohjelmointi on hankalaa, ja sen takia lupaan hyödyntää kaikkia ohjelmointia h
 
 <h3>Tehtävät 2.1.-2.5.</h3>
 
-Tehtävät palautetaan GitHubin kautta ja merkitsemällä tehdyt tehtävät [palautussovellukseen](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Voit palauttaa kurssin kaikki tehtävät samaan repositorioon, tai käyttää useita repositorioita. Jos palautat eri osien tehtäviä samaan repositorioon, käytä järkevää hakemistojen nimentää.
-
-Tehtävät palautetaan **yksi osa kerrallaan**. Kun olet palauttanut osan tehtävät, et voi enää palauttaa saman osan tekemättä jättämiäsi tehtäviä.
-
-Huomaa, että tässä osassa on muitakin tehtäviä kuin alla olevat, eli <i>älä tee palautusta</i> ennen kun olet tehnyt osan tehtävistä kaikki mitkä haluat palauttaa.
-
 <h4>2.1: kurssitiedot step6</h4>
+
+Jatka tehtävissä 1.1–1.5 aloitetun courseinfo-sovelluksen kehittämistä.
 
 Viimeistellään nyt tehtävien 1.1-1.5 kurssin sisältöjä renderöivän ohjelman koodi. Voit ottaa tarvittaessa pohjaksi mallivastauksen koodin.
 

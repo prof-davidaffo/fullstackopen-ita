@@ -538,38 +538,7 @@ Nesta parte, nem vale a pena tentar usar a renderização direta de arrays. Volt
 <div class="tasks">
   <h3>Exercícios 1.1 a 1.2</h3>
 
-Os exercícios são enviados via GitHub, marcando os exercícios como concluídos na guia "my submissions" do [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Os exercícios são enviados **uma parte de cada vez**. Quando você tiver enviado os exercícios para uma parte, não poderá mais enviar nenhum exercício não feito para essa parte.
-
-Note que nesta parte há [mais exercícios](/ptbr/part1/um_estado_mais_complexo_e_depuracao_de_aplicacoes_react#exercicios-1-6-a-1-14) além dos encontrados abaixo. <i>Não envie seus exercícios</i> até que você tenha concluído todos os exercícios desta parte.
-
-É possível colocar todos os exercícios em um mesmo repositório ou usar múltiplos repositórios diferentes. Se você enviar exercícios de diferentes partes para o mesmo repositório, dê nomes apropriados às suas pastas.
-
-Uma boa maneira de nomear as pastas no seu repositório de envio é a seguinte:
-
-```text
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  phonebook
-  countries
-```
-
-Veja este [exemplo de repositório de submissão](https://github.com/fullstack-hy2020/example-submission-repository)!
-
-Para cada parte do curso, há um diretório, que se ramifica em diretórios contendo uma série de exercícios, como "unicafe" para a Parte 1.
-
-Para cada aplicação web em uma série de exercícios, é recomendado que você envie todos os arquivos relacionados a essa aplicação, exceto o diretório <i>node_modules</i>.
-
-<i>**Obs.:** o conteúdo dos exercícios foram deixados no idioma original da tradução (inglês) por questões de conveniência, visto a revisão que os mantenedores do curso devem fazer no código enviado ao sistema de avaliação da Universidade de Helsinque. Desta forma, escreva suas aplicações utilizando os mesmos termos usados nas variáveis, componentes, etc que estão em inglês.</i>
-
   <h4>1.1: course information — 1º passo</h4>
-
-<i>A aplicação que começaremos a trabalhar neste exercício será desenvolvida em alguns dos exercícios seguintes. Neste e em outros conjuntos de exercícios futuros neste curso, é suficiente enviar apenas o estado final da aplicação. Se desejar, também pode criar um commit para cada exercício da série, mas é algo totalmente opcional.</i>
 
 Use "create-react-app" para inicializar uma nova aplicação. Modifique o arquivo <i>index.js</i> para que fique desta forma:
 

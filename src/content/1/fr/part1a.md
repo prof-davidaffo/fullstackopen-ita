@@ -609,36 +609,7 @@ Dans cette partie, il n'est même pas utile d'essayer d'utiliser le rendu direct
 <div class="tasks">
   <h3>Exercices 1.1.-1.2.</h3>
 
-Les exercices sont soumis via GitHub et en marquant les exercices terminés sur le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Vous pouvez soumettre tous les exercices de ce cours dans le même référentiel ou utiliser plusieurs référentiels. Si vous soumettez des exercices de différentes parties dans le même référentiel, veuillez utiliser un schéma de nommage raisonnable pour les répertoires.
-
-Une structure de fichiers très fonctionnelle pour le référentiel de soumission est la suivante :
-
-```
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  phonebook
-  countries
-```
-
-Voir cet [exemple de dépôt de soumission](https://github.com/fullstack-hy2020/example-submission-repository) !
-
-Pour chaque partie du cours, il y a un répertoire, qui se ramifie ensuite en sous-répertoires contenant une série d'exercices, comme "unicafe" pour la partie 1.
-
-Pour chaque application web d'une série d'exercices, il est recommandé de soumettre tous les fichiers relatifs à cette application, à l'exception du répertoire <i>node\_modules</i>.
-
-Les exercices sont soumis **une partie à la fois**. Lorsque vous avez soumis les exercices d'une partie du cours, vous ne pouvez plus soumettre d'exercices non terminés pour la même partie.
-
-Notez que dans cette partie, il y a plus d'exercices que ceux trouvés ci-dessous. <i>Ne soumettez pas votre travail</i> tant que vous n'avez pas terminé tous les exercices que vous souhaitez soumettre pour la partie correspondante.
-
 <h4>1.1 : courseinfo, étape 1</h4>
-
-<i>L'application sur laquelle nous allons commencer à travailler dans cet exercice sera développée plus en détail dans quelques-uns des exercices suivants. Dans cette série d'exercices et d'autres à venir dans ce cours, il suffit de soumettre uniquement l'état final de l'application. Si vous le souhaitez, vous pouvez également créer un commit pour chaque exercice de la série, mais cela est facultatif.</i>
 
 Utilisez Vite pour initialiser une nouvelle application. Modifiez <i>main.jsx</i> pour qu'il corresponde à ce qui suit
 

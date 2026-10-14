@@ -34,8 +34,9 @@ source files but are not published by the site.
 - Language selection is independent of the track. SQLite-specific lessons are
   available in Italian and English; other languages show an explicit English
   fallback for these lessons. Unchanged lessons retain their original language.
-- Original Markdown files are unchanged. Overrides live in `src/content/sqlite`
-  with `course: sqlite` frontmatter. Shared chapters reuse the original node.
+- SQLite overrides live in `src/content/sqlite` with `course: sqlite`
+  frontmatter. Shared chapters reuse the original node. All published material
+  omits upstream exercise submission rules and portals.
 - Existing chapter slugs are retained for link compatibility, even when a SQLite
   chapter has a new displayed title. The final deployment chapter is part 5f.
 - Search results, sidebar links, previous/next links and internal content links
@@ -44,6 +45,7 @@ source files but are not published by the site.
 Run the track and SQLite example checks without installing extra packages:
 
 ```bash
+node tests/course-content.test.cjs
 node tests/course-tracks.test.cjs
 node tests/sqlite-api-smoke.cjs
 ```
@@ -59,8 +61,10 @@ After building with `PATH_PREFIX=/fullstackopen-ita`, check generated HTML with:
 node tests/built-course-smoke.cjs /fullstackopen-ita
 ```
 
-Parts 6–14 retain the original advanced material; the SQLite adaptation covers
-the core course (0–5), not every specialization.
+Parts 6–14 retain the available advanced material; the SQLite adaptation covers
+the core course (0–5), not every specialization. English chapters for parts 8–11
+are served locally. Parts 12–13 link to the local Spanish chapters; Next.js
+material is not yet available in this handbook.
 
 ## Development
 

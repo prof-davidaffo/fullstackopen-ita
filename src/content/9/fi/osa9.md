@@ -8,7 +8,6 @@ lang: fi
 
 <div class="intro">
 
-Osan 9 materiaali on siirretty osoitteeseen <a href="https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-typescript">
-    https://courses.mooc.fi/org/uh-cs/courses/full-stack-open-typescript</a>
+Tämän oppimateriaalin sisältö on koottu [osaan 9](/en/part9).
 
 </div>

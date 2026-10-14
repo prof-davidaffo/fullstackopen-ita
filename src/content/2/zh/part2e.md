@@ -737,7 +737,4 @@ const api_key = import.meta.env.VITE_SOME_KEY
 <!-- Also remember that if you make changes to environment variables, you need to restart the development server for the changes to take effect. -->
 同时记得如果你更改了环境变量，你需要重启开发服务端来使更改生效。
 
-<!-- This was the last exercise of this part of the course. It's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).-->
-这是课程中这一章节的最后一道练习。是时候把你的代码推送到GitHub，并在[练习上交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记你所有完成的练习了。
-
 </div>

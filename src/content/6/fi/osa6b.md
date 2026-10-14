@@ -759,8 +759,6 @@ Huomaamme, että osa käyttäjien lisäämistä anekdooteista on huonoja. Toteut
 
 #### Bonus: anekdoottien testit
 
-**21.9. lähtien tehtävien palautuksissa vaaditaan läpimenevät testit**
-
 Tehtävärepositorio https://github.com/fullstack-hy2020/fs-statemanagement sisältää testit myös anekdoottisovellukselle.
 
 Varmista, että testit menevät nyt läpi paikallisesti:
@@ -1328,8 +1326,6 @@ Tee testi, joka varmistaa, että oikea React-komponentti saa oikein filtteröidy
 Tee testi, joka varmistaa, että äänestäminen korottaa anekdootin äänien määrää.
 
 #### Bonus: testien testaus
-
-**21.9. lähtien tehtävien palautuksissa vaaditaan läpimenevät testit**
 
 Tehtävärepositorio https://github.com/fullstack-hy2020/fs-typescript sisältää myös joitain "testejä" edellisissä tehtävissä tekemillesi testeille.
 

@@ -399,8 +399,6 @@ Il codice completo della versione attuale dell'applicazione si trova nel branch 
 
 <h3>Esercizi 2.6.-2.10.</h3>
 
-Nel primo esercizio inizieremo a lavorare a un'applicazione che verrà sviluppata ulteriormente negli esercizi successivi. Per i gruppi di esercizi collegati è sufficiente consegnare la versione finale dell'applicazione. Potete anche creare un commit separato dopo ogni esercizio del gruppo, ma non è obbligatorio.
-
 <h4>2.6: La rubrica, passo 1</h4>
 
 Creiamo una semplice rubrica telefonica. <i>**In questa parte aggiungeremo alla rubrica soltanto i nomi.**</i>

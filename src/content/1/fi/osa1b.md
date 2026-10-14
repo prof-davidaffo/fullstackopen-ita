@@ -248,7 +248,7 @@ Määrittelemme tällä kurssilla muutamaa poikkeusta lukuun ottamatta kaikki fu
 <div class="tasks">
   <h3>Tehtävät 1.3-1.5</h3>
 
-<i>Jatkamme edellisissä tehtävissä aloitetun ohjelman rakentamista. Voit siis tehdä koodin samaan projektiin, koska palautuksessa ollaan kiinnostuneita ainoastaan ohjelman lopullisesta versiosta.</i>
+<i>Jatkamme edellisissä tehtävissä aloitetun ohjelman rakentamista. Voit siis tehdä koodin samaan projektiin.</i>
 
 **Protip:** voit kohdata ohjelmoidessasi ongelmia sen suhteen missä muodossa komponentin saamat <i>propsit</i> ovat. Hyvä keino varmistua asiasta on tulostaa propsit konsoliin esim. seuraavasti:
 

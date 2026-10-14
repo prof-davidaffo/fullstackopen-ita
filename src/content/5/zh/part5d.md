@@ -1504,7 +1504,4 @@ describe('When logged in', () => {
 <!-- <i>This task is significantly more challenging than the previous ones.</i> -->
 <i>这项任务比之前的要困难得多。</i>
 
-<!-- This was the last task of the section and it's time to push the code to GitHub and mark the completed tasks in the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen). -->
-这是该部分的最后一个任务，现在可以将代码推送到 GitHub，并在[练习提交系统](https://studies.cs.helsinki.fi/stats/courses/fullstackopen)中标记已完成的任务。
-
 </div>

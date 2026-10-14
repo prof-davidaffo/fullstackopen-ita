@@ -1105,6 +1105,4 @@ Customize the appearance of the single blog display component as you see fit. He
 
 ![](../../images/5/l14.png)
 
-This was the last exercise of the section and it's time to push the code to GitHub and mark the completed exercises in the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

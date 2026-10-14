@@ -616,45 +616,23 @@ Tú mismo sufrirás fatiga de JavaScript durante este curso. Afortunadamente par
 <div class="tasks">
   <h3>Ejercicios 0.1.-0.6.</h3>
 
-Los ejercicios se envían a través de GitHub y marcando los ejercicios como realizados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Puedes enviar todos los ejercicios al mismo repositorio o utilizar varios repositorios diferentes. Si envías ejercicios de diferentes partes al mismo repositorio, nombra bien sus directorios. Si utilizas un repositorio privado para enviar los ejercicios, agrega a _mluukkai_ como colaborador.
-
-Una buena forma de nombrar los directorios en tu repositorio de entrega es la siguiente:
-
-```text
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  courseinfo
-  phonebook
-  countries
-```
-
-Entonces, cada parte tiene su propio directorio, que contiene un directorio para cada conjunto de ejercicios (como los ejercicios unicafe en la parte 1).
-
-Los ejercicios se envían **una parte a la vez**. Cuando hayas enviado los ejercicios de una parte, ya no podrás enviar ningún ejercicio omitido de esa parte.
-
   <h4>0.1: HTML</h4>
 
 Revisa los conceptos básicos de HTML leyendo este tutorial de Mozilla: [tutorial de HTML](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
-<i>Este ejercicio no se envía a GitHub, leer el tutorial es suficiente</i>
+<i>Lee el tutorial.</i>
 
   <h4>0.2: CSS</h4>
 
 Revisa los conceptos básicos de CSS leyendo este tutorial de Mozilla: [tutorial de CSS](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
-<i>Este ejercicio no se envía a GitHub, leer el tutorial es suficiente</i>
+<i>Lee el tutorial.</i>
 
   <h4>0.3: Formularios HTML</h4>
 
 Aprende sobre los conceptos básicos de los formularios HTML leyendo el tutorial de Mozilla [Mi primer formulario HTML](https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form).
 
-<i>Este ejercicio no se envía a GitHub, leer el tutorial es suficiente</i>
+<i>Lee el tutorial.</i>
 
   <h4>0.4: Nuevo diagrama de nota</h4>
 
@@ -710,7 +688,5 @@ Crea un diagrama que describa la situación en la que el usuario accede a la ver
 <h4>0.6: Nueva nota en diagrama de aplicación de una sola página</h4>
 
 Crea un diagrama que represente la situación en la que el usuario crea una nueva nota utilizando la versión de una sola página de la aplicación.
-
-Este fue el último ejercicio, y es hora de enviar tus respuestas a GitHub y marcar los ejercicios como hechos en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

@@ -15,6 +15,4 @@ Esta sección ha sido creada por [Jami Kousa](https://github.com/jakousa) en col
 <i>Parte actualizada el 21 de Marzo de 2024</i>
 - <i>Create react app reemplazado con Vite</i>
 
-**Note:** Si comenzaste esta parte antes de la actualización, puedes ver el viejo material [aquí](https://github.com/fullstack-hy2020/fullstack-hy2020.github.io/tree/4015af9dddb61cb01f013456d8728e8f553be347/src/content/12). Hay algunos cambios en las configuraciones del frontend.
-
 </div>

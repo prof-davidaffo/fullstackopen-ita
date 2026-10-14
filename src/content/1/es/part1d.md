@@ -1182,12 +1182,6 @@ Puede ser de tu interés que desactives Copilot por defecto cuando hagas este cu
 
 <h3> Ejercicios 1.6.-1.14.</h3>
 
-Envía tus soluciones a los ejercicios enviando primero tu código a GitHub y luego marcando los ejercicios completados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Recuerda, envía **todos** los ejercicios de una parte **en una sola presentación**. Una vez que hayas enviado tus soluciones para una parte, **ya no podrás enviar más ejercicios a esa parte**.
-
-<i>Algunos de los ejercicios funcionan en la misma aplicación. En estos casos, es suficiente enviar solo la versión final de la aplicación. Si lo deseas, puedes realizar un commit después de cada ejercicio terminado, pero no es obligatorio.</i>
-
 En algunas situaciones, es posible que también debas ejecutar el siguiente comando desde la raíz del proyecto:
 
 ```bash
@@ -1403,7 +1397,5 @@ Ahora implementa la versión final de la aplicación que muestra la anécdota co
 ![Anécdota con la mayor cantidad de votos](../../images/1/20a.png)
 
 Si varias anécdotas empatan en el primer lugar, es suficiente con solo mostrar una de ellas.
-
-Este fue el último ejercicio de esta parte del curso y es hora de enviar tu código a GitHub y marcar todos tus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

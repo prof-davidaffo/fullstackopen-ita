@@ -41,11 +41,7 @@ lang: zh
 
 ### Exercise 11.18
 
-<!-- We have set up a channel <i>fullstack\_webhook</i> to the course Discord group at [https://study.cs.helsinki.fi/discord/join/fullstack](https://study.cs.helsinki.fi/discord/join/fullstack) for testing a messaging integration.-->
- 我们在[https://study.cs.helsinki.fi/discord/join/fullstack](https://study.cs.helsinki.fi/discord/join/fullstack)的课程 Discord 小组中设立了一个频道 <i>fullstack\_webhook</i>，用于测试消息集成。
-
-<!-- Register now to Discord if you have not already done that. You will also need a <i>Discord webhook</i> in this exercise. You find the webhook in the pinned message of the channel <i>fullstack\_webhook</i>. Please do not commit the webhook to GitHub!-->
- 如果你还没有注册，现在就注册到 Discord。在这个练习中，你还需要一个<i>Discord webhook</i>。你可以在频道<i>fullstack/_webhook</i>的钉子信息中找到webhook。请不要把webhook提交到GitHub!
+创建用于测试通知的Discord频道，并为该频道配置webhook。不要将webhook URL加入版本控制。
 
 #### 11.18 Build success/failure notification action
 
@@ -142,44 +138,14 @@ lang: zh
 <!-- This is a long and perhaps quite a tough exercise, but this kind of situation where you have a "legacy code" and you need to build   proper deployment pipeline is quite common in real life!-->
 这是一个漫长的，也许是相当艰难的练习，但这种情况下，你有一个 "遗留的代码"，你需要建立适当的部署管道，在现实生活中是很常见的!
 
-<!-- Obviously, this exercise is not done in the same repository as the previous exercises. Since you can return only one repository to the submission system, put a link of the <i>other</i> repository to the one you fill into the submission form.-->
- 很明显，这个练习并不像前面的练习那样在同一个版本库中进行。因为你只能向提交系统返回一个版本库，所以把<i>另一个</i>版本库的链接放到你填写的提交表格中。
-
 #### 11.21 Protect your main branch and ask for pull request
 
 <!-- Protect the main branch of the repository where you did the previous exercise. This time prevent also the administrators from merging the code without a review.-->
  保护你之前练习的版本库的主分支。这次也要防止管理员在没有审核的情况下合并代码。
 
-<!-- Do a pull request and ask GitHub user [mluukkai](https://github.com/mluukkai) to review your code. Once the review is done, merge your code to the main branch. Note that the reviewer needs to be a collaborator in the repository. Ping us in Discord to get the review, it is best to send a private message and to include the collaboration invite link to the message.-->
- 做一个拉动请求，请GitHub用户[mluukkai](https://github.com/mluukkai)和/或 中的任何一个来审查你的代码。一旦审查完毕，就把你的代码合并到主分支。注意，审查者需要是版本库中的合作者。在 Discord 中与我们联系以获得审查，最好是发送私人信息，并在信息中加入合作邀请链接。
+创建拉取请求，请项目协作者审核代码。审核完成后，将代码合并到主分支。
 
 <!-- Then you are done!-->
  然后你就完成了!
-
-</div>
-
-<div class="content">
-
-### Submitting exercises and getting the credits
-
-<!-- Exercises of this part are submitted via [the submissions system](https://studies.cs.helsinki.fi/stats/courses/fs-cicd) just like in the previous parts, but unlike parts 0 to 7, the submission goes to different "course instance". Remember that you have to finish <i>all the exercises</i> to pass this part!-->
- 这一部分的练习是通过[提交系统](https://studies.cs.helsinki.fi/stats/courses/fs-cicd)提交的，就像前面几部分一样，但与0到7部分不同的是，提交到不同的 "课程实例"。请记住，你必须完成<i>所有的练习</i>才能通过这一部分!
-
-<!-- Your solutions are in two repositories (pokedex and your own project), and since you can return only one repository to the submission system, put a link of the <i>other</i> repository to the one you fill into the submission form!-->
- 你的解决方案在两个仓库中（pokedex和你自己的项目），由于你只能向提交系统返回一个仓库，请将<i>另一个</i>仓库的链接放在你填写的提交表格中
-
-<!-- Once you have completed the exercises and want to get the credits, let us know through the exercise submission system that you have completed the course:-->
- 一旦你完成了练习并想获得学分，通过练习提交系统让我们知道你已经完成了课程。
-
-![Submissions](../../images/11/21.png)
-
-<!-- Note that the "exam done in Moodle" note refers to the [Full Stack Open course's exam](/en/part0), which has to be completed before you can earn credits from this part.-->
- 注意，"在Moodle中完成的考试 "说明是指[全栈开放课程的考试](/en/part0)，在你从这部分获得学分之前必须完成。
-
-<!-- **Note** that you need a registration to the corresponding course part for getting the credits registered, see [here](/en/part0) for more information.-->
- **注意**你需要注册相应的课程部分以获得注册的学分，更多信息见[这里](/en/part0)。
-
-<!-- You can download the certificate for completing this part by clicking one of the flag icons. The flag icon corresponds to the certificate's language.-->
- 你可以通过点击其中一个标志图标来下载完成这部分的证书。旗帜图标与证书的语言相对应。
 
 </div>

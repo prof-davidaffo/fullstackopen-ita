@@ -1119,12 +1119,6 @@ Programar é difícil, e é por isso que eu usarei todos os meios possíveis par
 
 <h3>Exercícios 1.6 a 1.14</h3>
 
-Envie suas soluções aos exercícios dando "push" para seu repositório no GitHub e, em seguida, marque os exercícios concluídos na guia "my submissions" no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Lembre-se: envie **todos** os exercícios de uma parte **de uma única vez**; isto é, envie todas as suas soluções de uma vez para seu repositório. Uma vez que você tenha enviado suas soluções para uma parte, **não é mais possível enviar mais exercícios para essa parte**.
-
-<i> Alguns dos exercícios funcionam na mesma aplicação. Nestes casos, é suficiente enviar apenas a versão final da aplicação. Se desejar, você pode fazer um "commit" após cada exercício concluído, mas isso não é obrigatório.</i>
-
 **AVISO**: "create-react-app" transformará automaticamente seu projeto em um repositório git, a menos que você crie sua aplicação dentro de um repositório git já existente. **Você muito provavelmente não quer que cada um de seus projetos seja um repositório separado**, então basta executar o comando _rm -rf .git_ na raiz de sua aplicação para aplicar as modificações.
 
 Algumas vezes você terá que executar na raiz do projeto o comando abaixo:
@@ -1345,7 +1339,5 @@ Agora, implemente a versão final da aplicação que exibe a anedota com o maior
 ![anedota com o maior número de votos](../../images/1/20a.png)
 
 Se múltiplas anedotas estiverem empatadas no primeiro lugar, exiba apenas uma delas.
-
-Este foi o último exercício para esta parte do curso, e é hora de enviar seu código para o GitHub e marcar todos os seus exercícios concluídos na guia "my submissions" do [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

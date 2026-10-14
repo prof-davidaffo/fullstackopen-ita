@@ -544,7 +544,7 @@ Il codice corrente è disponibile su [GitHub](https://github.com/fullstack-hy202
 
 ### Esercizi 5.1-5.4
 
-Creiamo un frontend per il backend Bloglist della parte precedente. Puoi usare come base [questa applicazione](https://github.com/fullstack-hy2020/bloglist-frontend). Collega il backend tramite un proxy come mostrato nella [parte 3](/it/part3/pubblicare_l_applicazione_su_internet#proxy).
+Creiamo un frontend per il backend Bloglist della parte precedente. Puoi usare come base [questa applicazione](https://github.com/fullstack-hy2020/bloglist-frontend). Collega il backend tramite un proxy come mostrato nella [parte 3](/it/part3/pubblicare_lapplicazione_su_internet#proxy).
 
 Puoi creare un commit dopo ogni esercizio, ma non è obbligatorio.
 

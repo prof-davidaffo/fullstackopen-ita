@@ -1203,6 +1203,4 @@ cy.get('.blog').eq(1).should('contain', 'The title with the second most likes')
 
 Observe que você pode ter problemas se clicar no botão de curtir muitas vezes seguidas. Pode ser que o Cypress clique tão rapidamente que não tenha tempo para atualizar o estado do aplicativo entre os cliques. Uma solução para isso é aguardar a atualização do número de curtidas entre todos os cliques.
 
-Este foi o último exercício desta parte, é hora de enviar seu código para o GitHub e marcar os exercícios que você completou no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

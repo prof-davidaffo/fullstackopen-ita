@@ -611,45 +611,23 @@ Vous souffrirez vous-même de JavaScript fatigue pendant ce cours. Heureusement 
 <div class="tasks"> 
   <h3>Exercices 0.1.-0.6.</h3>
 
-Les exercices doivent être soumis via GitHub, et en marquant les exercices comme effectués dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Vous pouvez soumettre tous les exercices dans le même dépôt ou utiliser plusieurs dépôts différents. Si vous soumettez des exercices de différentes parties dans le même dépôt, nommez bien vos répertoires. Si vous utilisez un dépôt privé pour soumettre les exercices, ajoutez-y _mluukkai_ en tant que collaborateur.
-
-Une bonne façon de nommer les répertoires de votre dépôt de soumission est la suivante :
-
-```
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  courseinfo
-  phonebook
-  countries
-```
-
-Ainsi, chaque partie a son propre répertoire, qui contient un répertoire pour chaque ensemble d'exercices (comme les exercices unicafé de la partie 1).
-
-Les exercices sont soumis **une partie à la fois**. Lorsque vous avez soumis les exercices d'une partie, vous ne pouvez plus soumettre d'exercices manqués pour cette partie.
-
   <h4>0.1: HTML</h4>
 
 Passez en revue les bases du HTML en lisant ce didacticiel de Mozilla : [tutoriel HTML](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
-<i>Cet exercice n'est pas soumis à GitHub, il suffit de lire le tutoriel</i>
+<i>Lisez le tutoriel.</i>
 
   <h4>0.2: CSS</h4>
 
 Passez en revue les bases de CSS en lisant ce tutoriel de Mozilla : [tutoriel CSS](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
-<i>Cet exercice n'est pas soumis à GitHub, il suffit de lire le tutoriel</i>
+<i>Lisez le tutoriel.</i>
 
    <h4>0.3 : Formulaires HTML</h4>
 
 Découvrez les bases des formulaires HTML en lisant le didacticiel de Mozilla [Votre premier formulaire](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form).
 
-<i>Cet exercice n'est pas soumis à GitHub, il suffit de lire le tutoriel</i>
+<i>Lisez le tutoriel.</i>
 
   <h4>0.4 : Nouvelle note</h4>
 
@@ -706,5 +684,4 @@ Créez un diagramme illustrant la situation dans laquelle l'utilisateur accède 
 
 Créez un diagramme illustrant la situation dans laquelle l'utilisateur crée une nouvelle note à l'aide de la version à page unique de l'application.
 
-C'était le dernier exercice, et il est temps de transmettre vos réponses à GitHub et de marquer les exercices comme effectués dans le [système de soumission](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 </div>

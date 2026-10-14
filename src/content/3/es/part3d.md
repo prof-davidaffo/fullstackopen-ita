@@ -404,6 +404,4 @@ Puedes encontrar el código para nuestra aplicación actual en su totalidad en l
 
 Agrega ESlint a tu aplicación y corrige todas las advertencias.
 
-Este fue el último ejercicio de esta parte del curso. Es hora de enviar tu código a GitHub y marcar todos tus ejercicios terminados en el [sistema de envío de ejercicios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

@@ -640,6 +640,4 @@ const api_key = import.meta.env.VITE_SOME_KEY
 
 Also remember that if you make changes to environment variables, you need to restart the development server for the changes to take effect.
 
-This was the last exercise of this part of the course. It's time to push your code to GitHub and mark all of your finished exercises to the [exercise submission system](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
 </div>

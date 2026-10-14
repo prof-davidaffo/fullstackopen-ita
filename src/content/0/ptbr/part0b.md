@@ -613,45 +613,23 @@ Você sofrerá de fadiga JavaScript durante este curso. Felizmente para nós, ex
 <div class="tasks"> 
   <h3>Exercícios 0.1 a 0.6</h3>
 
-Os exercícios são enviados via GitHub, marcando os exercícios como concluídos na guia "my submissions" do [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
-
-Você pode colocar todos os exercícios em um mesmo repositório ou usar múltiplos repositórios diferentes. Se você enviar exercícios de diferentes partes para o mesmo repositório, dê nomes apropriados às suas pastas. Se você usar um repositório privado para enviar os exercícios, adicione _mluukkai_ como colaborador dele.
-
-Uma boa maneira de nomear as pastas no seu repositório de envio é a seguinte:
-
-```
-part0
-part1
-  courseinfo
-  unicafe
-  anecdotes
-part2
-  courseinfo
-  phonebook
-  countries
-```
-
-Então, cada parte tem sua própria pasta, que contém uma pasta para cada conjunto de exercícios (como os exercícios "unicafe" na parte 1).
-
-Os exercícios são enviados **uma parte de cada vez**. Quando você tiver enviado os exercícios para uma parte, não poderá mais enviar nenhum exercício não feito para essa parte.
-
   <h4>0.1: HTML</h4>
 
 Revise os conceitos básicos de HTML lendo esse tutorial do Mozilla: [HTML tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics).
 
-<i>Este exercício não é enviado ao GitHub. Ler o tutorial já é suficiente.</i>
+<i>Leia o tutorial.</i>
 
   <h4>0.2: CSS</h4>
 
 Revise os conceitos básicos de CSS lendo esse tutorial do Mozilla: [CSS tutorial](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics).
 
-<i>Este exercício não é enviado ao GitHub. Ler o tutorial já é suficiente.</i>
+<i>Leia o tutorial.</i>
 
   <h4>0.3: Formulários HTML</h4>
 
 Aprenda sobre os conceitos básicos de formulários HTML lendo o tutorial do Mozilla [Your first form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form).
 
-<i>Este exercício não é enviado ao GitHub. Ler o tutorial já é suficiente.</i>
+<i>Leia o tutorial.</i>
 
   <h4>0.4: Novo diagrama das notas</h4>
 
@@ -707,7 +685,5 @@ Crie um diagrama que retrate o contexto em que o usuário utilize a versão de a
 <h4>0.6: Nova nota no diagrama de SPA</h4>
 
 Crie um diagrama que retrate o contexto em que o usuário cria uma nova nota utilizando a versão de aplicação de página única.
-
-Este foi o último exercício, e é hora de enviar suas respostas para o GitHub e marcar os exercícios como concluídos no [sistema de envio de exercícios](https://studies.cs.helsinki.fi/stats/courses/fullstackopen).
 
 </div>

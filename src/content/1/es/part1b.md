@@ -248,7 +248,7 @@ Durante este curso definiremos todas las funciones usando la sintaxis de flecha.
 
   <h3>Ejercicios 1.3.-1.5.</h3>
 
-<i>Seguimos construyendo la aplicación en la que empezamos a trabajar en los ejercicios anteriores. Puedes escribir el código en el mismo proyecto, ya que solo estamos interesados en el estado final de la aplicación enviada.</i>
+<i>Seguimos construyendo la aplicación en la que empezamos a trabajar en los ejercicios anteriores. Puedes escribir el código en el mismo proyecto.</i>
 
 **Pro-tip:** puedes tener problemas cuando se trata de la estructura de los <i>props</i> que reciben los componentes. Una buena manera de aclarar las cosas es imprimiendo los props en la consola, por ejemplo, de la siguiente manera:
 
