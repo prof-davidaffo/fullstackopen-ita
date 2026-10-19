@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Notes -- single page app</title>
     <link rel="stylesheet" href="../main.css" />
-    <script src="../bootstrap.js"></script>
+    <script>
+      (function () {
+        if (!('serviceWorker' in navigator)) {
+          window.exampleAppReady = Promise.resolve()
+          return
+        }
+
+        var basePath =
+          window.location.pathname.split('/exampleapp')[0] + '/exampleapp/'
+
+        // Controlled pages already have the API: do not register on every visit.
+        if (
+          navigator.serviceWorker.controller &&
+          navigator.serviceWorker.controller.scriptURL ===
+            new URL(basePath + 'service-worker.js', window.location.href).href
+        ) {
+          window.exampleAppReady = Promise.resolve()
+          return
+        }
+
+        window.exampleAppReady = navigator.serviceWorker
+          .register(basePath + 'service-worker.js', { scope: basePath })
+          .then(function () {
+            return navigator.serviceWorker.ready
+          })
+          .then(function () {
+            if (!navigator.serviceWorker.controller) {
+              window.location.reload()
+              return new Promise(function () {})
+            }
+          })
+      })()
+    </script>
     <script src="../spa.js"></script>
   </head>
   <body>

@@ -47,6 +47,7 @@ Run the track and SQLite example checks without installing extra packages:
 ```bash
 node tests/course-content.test.cjs
 node tests/course-tracks.test.cjs
+node tests/exampleapp.test.cjs
 node tests/sqlite-api-smoke.cjs
 ```
 

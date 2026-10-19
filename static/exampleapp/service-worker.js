@@ -62,7 +62,6 @@ function frontPageResponse(noteCount) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Full stack example app</title>
-    <script src="bootstrap.js"></script>
   </head>
   <body>
     <div class="container">

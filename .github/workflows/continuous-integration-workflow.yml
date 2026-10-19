@@ -28,6 +28,8 @@ jobs:
         run: npm ci
       - name: Check course tracks
         run: node tests/course-tracks.test.cjs
+      - name: Check part 0 example app
+        run: node tests/exampleapp.test.cjs
       - name: Build
         run: npm run build
       - name: Check generated site
