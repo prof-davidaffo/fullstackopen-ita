@@ -2,6 +2,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const prepareExampleApp = require('../src/utils/prepareExampleApp');
 
 const read = (file) =>
   fs.readFileSync(path.join(__dirname, '../static/exampleapp', file), 'utf8');
@@ -18,34 +19,96 @@ async function check(prefix) {
       [...html.matchAll(/<script src="([^"]+)"/g)].map((m) => m[1]),
       expectedScripts
     );
-    const init = html.match(/<script>([\s\S]*?)<\/script>/)[1];
-    for (const controlled of [false, true]) {
-      let registrations = 0;
-      let reloads = 0;
-      const serviceWorker = {
-        controller: controlled
-          ? { scriptURL: base + 'service-worker.js' }
-          : null,
-        ready: Promise.resolve(),
-        register: async (url, options) => {
-          registrations++;
-          assert.equal(url, `${prefix}/exampleapp/service-worker.js`);
-          assert.equal(options.scope, `${prefix}/exampleapp/`);
-          serviceWorker.controller = { scriptURL: base + 'service-worker.js' };
-        },
-      };
-      const window = {
-        location: {
-          href: base + file,
-          pathname: new URL(base + file).pathname,
-          reload: () => reloads++,
-        },
-      };
-      vm.runInNewContext(init, { window, navigator: { serviceWorker }, URL });
-      await window.exampleAppReady;
-      assert.equal(registrations, controlled ? 0 : 1);
-      assert.equal(reloads, 0);
+    assert.doesNotMatch(html, /<script>/);
+  }
+
+  // Both lesson scripts work without any hosting-specific globals.
+  for (const file of ['main.js', 'spa.js']) {
+    const requests = [];
+    const window = { location: new URL(base + 'notes/') };
+    function XMLHttpRequest() {
+      this.open = (method, url) => requests.push([method, url]);
+      this.send = () => {};
     }
+    vm.runInNewContext(read(file), {
+      window,
+      XMLHttpRequest,
+      document: { getElementById: () => ({}) },
+    });
+    assert.equal(requests.length, 0);
+    window.onload();
+    assert.deepEqual(requests, [['GET', `${prefix}/exampleapp/data.json`]]);
+  }
+
+  // The handbook waits for worker activation before navigating to an example.
+  for (const installed of [false, true]) {
+    let registrations = 0;
+    let onClick;
+    let onStateChange;
+    let destination;
+    const worker = {
+      state: installed ? 'activated' : 'installing',
+      addEventListener: (_, listener) => {
+        onStateChange = listener;
+      },
+      removeEventListener: () => {},
+    };
+    const serviceWorker = {
+      register: async (url, options) => {
+        registrations++;
+        assert.equal(url, `${prefix}/exampleapp/service-worker.js`);
+        assert.equal(options.scope, `${prefix}/exampleapp/`);
+        return installed ? { active: worker } : { installing: worker };
+      },
+      get ready() {
+        throw new Error('Handbook is outside worker scope');
+      },
+    };
+    const browser = {
+      location: {
+        href: `https://example.test${prefix}/it/part0`,
+        origin: 'https://example.test',
+        assign: (url) => {
+          destination = url;
+        },
+      },
+      console,
+    };
+    const document = {
+      addEventListener: (name, listener) => {
+        assert.equal(name, 'click');
+        onClick = listener;
+      },
+    };
+    const ready = prepareExampleApp(
+      browser,
+      { serviceWorker },
+      document,
+      `${prefix}/exampleapp/`
+    );
+    let prevented = false;
+    const link = { href: base + 'notes/', hasAttribute: () => false };
+    const event = {
+      button: 0,
+      target: { closest: () => link },
+      preventDefault: () => {
+        prevented = true;
+      },
+    };
+    onClick({ ...event, ctrlKey: true });
+    assert.equal(prevented, false);
+    onClick(event);
+    assert.equal(prevented, true);
+    assert.equal(destination, undefined);
+    await Promise.resolve();
+    if (!installed) {
+      assert.equal(destination, undefined);
+      worker.state = 'activated';
+      onStateChange();
+    }
+    assert.equal(await ready, true);
+    assert.equal(registrations, 1);
+    assert.equal(destination, base + 'notes/');
   }
 
   const handlers = {};

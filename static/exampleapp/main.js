@@ -1,4 +1,4 @@
-window.exampleAppReady.then(function () {
+window.onload = function () {
   var basePath =
     window.location.pathname.split('/exampleapp')[0] + '/exampleapp/'
   var xhttp = new XMLHttpRequest()
@@ -23,4 +23,4 @@ window.exampleAppReady.then(function () {
 
   xhttp.open('GET', basePath + 'data.json', true)
   xhttp.send()
-})
+}

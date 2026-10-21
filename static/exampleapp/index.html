@@ -4,39 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Full stack example app</title>
-    <script>
-      (function () {
-        if (!('serviceWorker' in navigator)) {
-          window.exampleAppReady = Promise.resolve()
-          return
-        }
-
-        var basePath =
-          window.location.pathname.split('/exampleapp')[0] + '/exampleapp/'
-
-        // Controlled pages already have the API: do not register on every visit.
-        if (
-          navigator.serviceWorker.controller &&
-          navigator.serviceWorker.controller.scriptURL ===
-            new URL(basePath + 'service-worker.js', window.location.href).href
-        ) {
-          window.exampleAppReady = Promise.resolve()
-          return
-        }
-
-        window.exampleAppReady = navigator.serviceWorker
-          .register(basePath + 'service-worker.js', { scope: basePath })
-          .then(function () {
-            return navigator.serviceWorker.ready
-          })
-          .then(function () {
-            if (!navigator.serviceWorker.controller) {
-              window.location.reload()
-              return new Promise(function () {})
-            }
-          })
-      })()
-    </script>
   </head>
   <body>
     <div class="container">

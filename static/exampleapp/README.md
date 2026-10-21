@@ -9,13 +9,17 @@ implements the small JSON API locally in the browser, including the GET and POST
 responses used by the course exercises. Notes are stored in the browser cache
 and can be restored to the initial data by opening `reset` inside this directory.
 
-Worker registration is inline in the static HTML, so it does not add a separate
-script request to the examples. Pages already controlled by this worker skip
-registration. The generated front page contains no scripts. On subsequent visits,
-the application requests match the lesson: HTML and `kuva.png` on the front page;
-HTML, `main.css`, `main.js` (or `spa.js`), and `data.json` on the notes pages.
+The handbook registers the worker through `src/utils/prepareExampleApp.js`.
+Normal clicks on example links wait for activation before navigating. The worker
+is scoped to `exampleapp/`, so it does not control handbook pages.
 
-The first visit still installs the service worker and reloads the page before
-using the simulated API. Let that setup finish, then clear the Network panel and
-reload to inspect the lesson's sequence. DevTools labels API responses as coming
-from a service worker; this is a static-hosting simulation, not an Express server.
+The example HTML contains no inline scripts or worker registration. The front
+page requests only HTML and `kuva.png`; the notes pages request HTML, `main.css`,
+`main.js` (or `spa.js`), and `data.json`. The lesson scripts start on `window.onload`
+and have no dependency on the handbook's setup code.
+
+On a fresh browser profile, open the handbook before visiting an example. A direct
+visit without prior setup can display the static files, but saving notes requires
+the worker installed by the handbook. After installation, direct visits work too.
+DevTools labels API responses as coming from a service worker; this is a
+static-hosting simulation, not an Express server.

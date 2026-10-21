@@ -61,10 +61,4 @@ var startApplication = function () {
   }
 }
 
-window.exampleAppReady.then(function () {
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startApplication)
-  } else {
-    startApplication()
-  }
-})
+window.onload = startApplication
